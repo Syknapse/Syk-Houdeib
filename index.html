@@ -23,17 +23,22 @@
 	<meta name="twitter:image" content="assets/images/og.PNG"> <!-- add img -->
 
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
 	<!-- ++++++++++++++++++++++ HEADER start ++++++++++++++++++++++ -->
 	<header>
 
-		<h1>Syk Houdeib</h1>
-		<p>Front-end Developer</p>
+		<div class="name">
+			<h1>Syk Houdeib</h1>
+			<p>Front-end Developer</p>
+		</div>
 		<div>
-			<span>hot-dog button</span>
+			<span id="nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
 		</div>
 		
 	</header>
@@ -43,15 +48,15 @@
 	<!-- ++++++++++++++++++++++ NAV start ++++++++++++++++++++++ -->
 	<nav>
 
-		<a id="menu-btn-home" href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+		<a id="menu-btn-home" href="#home"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a>
 
-		<a id="menu-btn-skills" href="#skills"><i class="fa fa-line-chart" aria-hidden="true"></i>Skills</a>
+		<a id="menu-btn-skills" href="#skills"><i class="fa fa-line-chart fa-fw" aria-hidden="true"></i> Skills</a>
 
-		<a id="menu-btn-about" href="#about"><i class="fa fa-id-badge" aria-hidden="true"></i>About</a>
+		<a id="menu-btn-about" href="#about"><i class="fa fa-id-badge fa-fw" aria-hidden="true"></i> About</a>
 
-		<a id="menu-btn-projects" href="#projects"><i class="fa fa-code" aria-hidden="true"></i>Projects</a>
+		<a id="menu-btn-projects" href="#projects"><i class="fa fa-code fa-fw" aria-hidden="true"></i> Projects</a>
 
-		<a id="menu-btn-contact" href="#contact"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Contact</a>
+		<a id="menu-btn-contact" href="#contact"><i class="fa fa-paper-plane-o fa-fw" aria-hidden="true"></i> Contact</a>
 		
 	</nav>
 	<!-- ++++++++++++++++++++++ nav END ++++++++++++++++++++++ -->
@@ -62,10 +67,12 @@
 
 		<img src="assets/images/profile.jpg">
 
-		<div class=""><a href="https://www.linkedin.com/in/syk-houdeib/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-		<div class=""><a href="https://github.com/Syknapse" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-		<div class=""><a href="https://twitter.com/Syknapse" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-		<div class=""><a href="https://codepen.io/Syknapse/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></div>
+		<div class="home-links-container">
+		<div class="home-links"><a href="https://www.linkedin.com/in/syk-houdeib/" target="_blank"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></div>
+		<div class="home-links"><a href="https://github.com/Syknapse" target="_blank"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></div>
+		<div class="home-links"><a href="https://twitter.com/Syknapse" target="_blank"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></div>
+		<div class="home-links"><a href="https://codepen.io/Syknapse/" target="_blank"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i></a></div>
+		</div>
 
 		<div class="blurb"><p>Front-end Developer with an eye for the beautiful, modern, and responsive web.</p></div>
 		
@@ -78,9 +85,12 @@
 
 		<div class="section-title">
 			<h2>Skills</h2>
+			<div class="title-primary"></div>
+     	 	<div class="title-secondary"></div>
+     	 	<div class="title-tertiary"></div>
 		</div>
 
-		<div>mission Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		<div class="skills-info">mission Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
 
 		<div class="skill-cards">
 			<img src="http://via.placeholder.com/150x150">
@@ -115,6 +125,9 @@
 
 		<div class="section-title">
 			<h2>About</h2>
+			<div class="title-primary"></div>
+     	 	<div class="title-secondary"></div>
+     	 	<div class="title-tertiary"></div>
 		</div>
 
 		<div>a bit about me</div>
@@ -130,6 +143,9 @@
 
 		<div class="section-title">
 			<h2>Projects</h2>
+			<div class="title-primary"></div>
+     	 	<div class="title-secondary"></div>
+     	 	<div class="title-tertiary"></div>
 		</div>
 
 		<div class="project-cards">
@@ -213,6 +229,9 @@
 
 		<div class="section-title">
 			<h2>Contact</h2>
+			<div class="title-primary"></div>
+     	 	<div class="title-secondary"></div>
+     	 	<div class="title-tertiary"></div>
 		</div>
 
 		<div class=""><a href="https://www.linkedin.com/in/syk-houdeib/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>

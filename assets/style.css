@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Dosis', sans-serif;
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+}
+
+/*main purple: #7158ff
+main green: #10cc75    */
+
+/* --------------- HEADER start --------------- */
+header {
+	position: fixed;
+	z-index: 5;
+	width: 100vw;
+	height: 50px;  /*header height*/
+	background-color: black;
+	text-align: center;
+}
+
+.name {
+	float: left;
+	width: 80vw;
+} 
+
+header h1 {
+	color: #7158ff;
+	padding-left: 20vw;
+}
+
+header p {
+	color: #10cc75;
+	padding-left: 20vw;
+	font-size: 1.2em;
+}
+
+header span {
+	color: #10cc75;
+	float: right;
+	height: 40px;  /*depending on header height*/
+	margin: 5px 3vw 5px auto;
+	font-size: 2.8em;
+}
+
+/* --------------- header END --------------- */
+
+
+/* --------------- NAV start --------------- */
+nav {
+	position: fixed;
+	z-index: 4;
+	top:50px;
+	height: 100%;  /*fallback for no calc support*/
+	height: calc(100vh - 50px);  /*depending on header height*/
+	width: 40vw;
+	background-color: black;
+	color: #7158ff;
+	font-size: 1.8em;
+	letter-spacing: 4px;
+	line-height: 3em;
+	padding-top: 20vh;
+
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: transform .4s ease;
+	transition: transform .4s ease;
+}
+
+.open {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.open-btn {
+	color: #307f58;
+}
+
+nav a {
+	display: block;
+	text-align: left;
+	margin-left: 3vw;
+}
+
+nav a i {
+	color: #10cc75;
+}
+
+/* --------------- nav END --------------- */
+
+
+/* --------------- HOME start --------------- */
+#home img {
+	margin: 80px auto 40px 30vw; /*fallback for no calc support*/
+	margin: 80px calc(50vw - 75px) 40px calc(50vw - 75px);  /*depending on header height*/
+	width: 150px;
+	border-radius: 50%;
+}
+
+.home-links-container {
+	text-align: center;
+	font-size: 3.8em;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.home-links {
+	display: inline;
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.blurb {
+	text-align: center;
+	font-size: 3em;
+	margin: 8vh 3vw 10vh 3vw;
+}
+
+/* --------------- home END --------------- */
+
+
+/* ----- section titles start----- */
+.section-title {
+	position: relative;
+	height: 60px;
+	width: 100vw;
+	margin: 3vh 0 6vh 0;
+}
+
+h2 {
+	position: absolute;
+	left: 18vw;
+	z-index: 3;
+	font-size: 3em;
+	letter-spacing: 8px;
+}
+
+.title-primary {
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+	background-color: rgba(113, 88, 255, .5);
+	width: 60vw;
+	height: 30px;
+	
+}
+
+.title-secondary {
+	position: absolute;
+	top: 54%;
+	right: 0;
+	z-index: 2;
+	background-color: rgba(16, 204, 117, .5);
+	width: 70vw;
+	height: 12px;
+}
+
+.title-tertiary {
+	position: absolute;
+	bottom: 7%;
+	left: 24vw;
+	z-index: 3;
+	background-color: rgba(255, 84, 76, .8);
+	width: 49vw;
+	height: 3px;
+}
+
+/* ----- section titles end ----- */
+
+
+/* --------------- SKILLS start --------------- */
+.skills-info {
+	width: 80vw;
+	margin: 5px auto 6vh auto;
+	border: 1px solid rgba(48, 127, 91, 1);
+	border-radius: 5px;
+	font-size: 2em;
+	padding: 5px;
+	text-align: justify;
+}
+
+.skill-cards {
+	border: 1px solid rgba(89, 82, 127, 1);
+	border-radius: 5px;
+	height: 150px;
+	margin: 3px;
+}
+
+.skill-cards img {
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+.skill-cards h3 {
+	font-size: 2em;
+	padding: 3px 3px 3px 155px;  /*depending on image size*/
+}
+
+.skill-cards p {
+	font-size: 2em;
+	padding: 3px 3px 3px 155px;  /*depending on image size*/
+}
+
+/* --------------- skills END --------------- */
