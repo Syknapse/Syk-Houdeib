@@ -97,6 +97,15 @@ nav a i {
 	color: #10cc75;
 }
 
+/*section {
+	transition: .8s;
+}
+
+.clear-header {
+	padding-top: 10px;
+	background-color: blue;
+}*/
+
 /* --------------- nav END --------------- */
 
 
@@ -134,7 +143,7 @@ nav a i {
 	position: relative;
 	height: 60px;
 	width: 100vw;
-	margin: 3vh 0 6vh 0;
+	margin: 15vh 0 6vh 0;
 }
 
 h2 {
@@ -177,23 +186,42 @@ h2 {
 
 /* ----- section titles end ----- */
 
+/* ----- box style start ----- */
+.skills-info::before, .about-me::before {
+	content: "";
+	position: absolute;
+	width: 92vw;
+	height: 100%;
+	border-bottom: 5px solid rgba(113, 88, 255, .3);
+	top: 2%;
+	left: -5%;
+}
+.skills-info::after, .about-me::after {
+	content: "";
+	position: absolute;
+	width: 80vw;
+	height: 100%;
+	border-left: 2px solid rgba(255, 84, 76, .5);
+	top: 18%;
+	left: -2%;
+}
+/* ----- box style end----- */
 
 /* --------------- SKILLS start --------------- */
 .skills-info {
+	position: relative;
 	width: 80vw;
-	margin: 5px auto 6vh auto;
-	border: 1px solid rgba(48, 127, 91, 1);
-	border-radius: 5px;
+	margin: 5px auto 60px auto;
 	font-size: 2em;
 	padding: 5px;
 	text-align: justify;
 }
 
 .skill-cards {
-	border: 1px solid rgba(89, 82, 127, 1);
-	border-radius: 5px;
+	border: 1px solid #999;
 	height: 150px;
-	margin: 3px;
+	width: 98vw;
+	margin: 25px auto;
 }
 
 .skill-cards img {
@@ -213,3 +241,90 @@ h2 {
 }
 
 /* --------------- skills END --------------- */
+
+
+/* --------------- ABOUT start --------------- */
+.about-me {
+	position: relative;
+	width: 80vw;
+	margin: 5px auto 60px auto;
+	font-size: 2em;
+	padding: 5px;
+	text-align: justify;
+}
+
+.about-background-container {
+	text-align: center;
+}
+
+.about-background-link {
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #666;
+	padding: 10px 20px;
+	border: 2px solid #666;
+	text-transform: uppercase;
+	border-radius: 5px;
+	transition: .3s;
+}
+
+.about-background-link:hover {
+	background-color: #666;
+	color: white;
+	border-radius: 15px;
+	border: 3px solid black;
+}
+
+/* --------------- about END --------------- */
+
+
+/* --------------- PROJECTS start --------------- */
+.project-cards {
+	text-align: center;
+	font-size: 2em;
+	margin: 8vh auto;
+}
+
+/* --------------- projects END --------------- */
+
+
+/* --------------- CONTACT start --------------- */
+.contact-links-container {
+	text-align: center;
+	font-size: 3em;
+	width: 100vw;
+	height: 20vh;
+	margin-top: 35%;
+	margin-bottom: 15%;
+}
+.contact-links {
+	display: inline;
+	padding: 1vw;
+	margin: 2vw;
+	line-height: 10vh;
+	border-radius: 50%;
+	transition: .5s ease;
+}
+
+.contact-links:hover {
+	color: white;
+	background-color: #7158ff;
+}
+
+/* --------------- contact END --------------- */
+footer {
+	font-size: 1.5em;
+}
+.footer {
+	text-align: center;
+	width: 60vw;
+	height: 5vh;
+	margin: auto;
+}
+.footer p:nth-child(1) {
+	float: left;
+}
+.footer p:nth-child(2) {
+	float: right;
+	color: #10cc75; 
+}
