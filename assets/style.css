@@ -50,6 +50,7 @@ header span {
 	height: 40px;  /*depending on header height*/
 	margin: 5px 3vw 5px auto;
 	font-size: 2.8em;
+	cursor: pointer;
 }
 
 /* --------------- header END --------------- */
@@ -97,14 +98,14 @@ nav a i {
 	color: #10cc75;
 }
 
-/*section {
+section {
+	margin-bottom: 15vh;
 	transition: .8s;
 }
 
 .clear-header {
-	padding-top: 10px;
-	background-color: blue;
-}*/
+	transform: translateY(10vh);
+}
 
 /* --------------- nav END --------------- */
 
@@ -127,6 +128,12 @@ nav a i {
 	display: inline;
 	padding-left: 3vw;
 	padding-right: 3vw;
+	border-radius: 1.9em;
+	transition: .2s ease;
+}
+
+.home-links:hover {
+	color: #7158ff;
 }
 
 .blurb {
@@ -143,7 +150,7 @@ nav a i {
 	position: relative;
 	height: 60px;
 	width: 100vw;
-	margin: 15vh 0 6vh 0;
+	/*margin: 15vh 0 6vh 0;*/
 }
 
 h2 {
