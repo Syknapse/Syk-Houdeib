@@ -405,9 +405,13 @@ footer {
 	color: #10cc75; 
 }
 
-/*@media screen and (min-width: px){
-	.project-card-description {
-		height: 350px;
-		width: 75vw;
+/*continue with max-width to maintain a good fallback layout */
+@media screen and (min-width: 960px){
+	.blurb p {
+		max-width: 800px;
+		margin: auto;
 	}
-}*/
+	.skills-info {
+		max-width: 800px;  /*do you need media queries for these or they can just be added in main style?*/
+	}
+}
