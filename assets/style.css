@@ -313,6 +313,14 @@ h2 {
 .project-cards {
 	font-size: 2em;
 	margin: 8vh auto;
+	width: 300px;
+	border: 1px solid #999;
+}
+
+.plus {
+	font-size: 1.7em;
+	display: none;
+	cursor: pointer;
 }
 
 .project-card-description {
@@ -320,6 +328,7 @@ h2 {
 	height: 350px;
 	width: 300px;
 	margin: auto;
+	transition: .9s;
 }
 
 .project-image {
@@ -343,11 +352,6 @@ h2 {
 .project-card-description p {
 	padding: 0 5px 5px 5px;
 	text-align: justify;
-}
-
-.plus {
-	font-size: 1.7em;
-	display: none;
 }
 
 .project-card-highlights {
@@ -378,6 +382,40 @@ h2 {
 .project-card-highlights a {
 	padding: 5px 50px;
 	font-size: 1.7em;
+}
+
+/* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
+@supports (display: flex){
+	.project-cards {
+		position: relative;
+		height: 350px;
+	}
+	.project-card-description {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background-color: white;
+		
+	}
+	.project-card-highlights {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: #ddd;
+	}
+	.plus {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 5;
+	}
+	.swing-away {
+		/*transform: translateX(-90%);*/
+		transform: translate(-50%, -50%) rotate(-110deg);
+	}
 }
 
 
