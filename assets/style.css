@@ -44,6 +44,7 @@ header p {
 	font-size: 1.2em;
 }
 
+/* #nav-btn */
 header span {
 	color: #10cc75;
 	float: right;
@@ -51,6 +52,7 @@ header span {
 	margin: 5px 3vw 5px auto;
 	font-size: 2.8em;
 	cursor: pointer;
+	z-index: 6;
 }
 
 /* --------------- header END --------------- */
@@ -63,7 +65,9 @@ nav {
 	top:50px;
 	height: 100%;  /*fallback for no calc support*/
 	height: calc(100vh - 50px);  /*depending on header height*/
-	width: 40vw;
+	width: 45vw;
+	max-width: 300px;
+	min-width: 200px;
 	background-color: black;
 	color: #7158ff;
 	font-size: 1.8em;
@@ -116,7 +120,8 @@ section {
 	position: relative;
 	height: 60px;
 	width: 100vw;
-	margin: 10vh 0 8vh 0;
+	max-width: 960px;  /* compatibility large screen fallback*/
+	margin: 10vh auto 8vh auto;
 }
 
 h2 {
@@ -133,6 +138,7 @@ h2 {
 	z-index: 1;
 	background-color: rgba(113, 88, 255, .5);
 	width: 60vw;
+	max-width: 800px;  /* compatibility large screen fallback*/
 	height: 30px;
 	
 }
@@ -144,6 +150,7 @@ h2 {
 	z-index: 2;
 	background-color: rgba(16, 204, 117, .5);
 	width: 70vw;
+	max-width: 900px;  /* compatibility large screen fallback*/
 	height: 12px;
 }
 
@@ -154,6 +161,7 @@ h2 {
 	z-index: 3;
 	background-color: rgba(255, 84, 76, .8);
 	width: 49vw;
+	max-width: 700px;  /* compatibility large screen fallback*/
 	height: 3px;
 }
 
@@ -173,6 +181,8 @@ h2 {
 	font-size: 3.8em;
 	padding-top: 5px;
 	padding-bottom: 10px;
+	max-width: 960px;  /* compatibility large screen fallback*/
+	margin: auto;
 }
 .home-links {
 	display: inline;
@@ -192,6 +202,11 @@ h2 {
 	margin: 8vh 3vw 10vh 3vw;
 }
 
+.blurb p {
+		max-width: 800px;  /* compatibility large screen fallback*/
+		margin: auto;
+	}
+
 /* --------------- home END --------------- */
 
 
@@ -202,6 +217,7 @@ h2 {
 	content: "";
 	position: absolute;
 	width: 92vw;
+	max-width: 920px;  /* compatibility large screen fallback*/
 	height: 100%;
 	border-bottom: 5px solid rgba(113, 88, 255, .3);
 	top: 2%;
@@ -211,6 +227,7 @@ h2 {
 	content: "";
 	position: absolute;
 	width: 80vw;
+	max-width: 800px;  /* compatibility large screen fallback*/
 	height: 100%;
 	border-left: 2px solid rgba(255, 84, 76, .5);
 	top: 18%;
@@ -222,6 +239,7 @@ h2 {
 .skills-info {
 	position: relative;
 	width: 80vw;
+	max-width: 800px;  /* compatibility large screen fallback*/
 	margin: 5px auto 60px auto;
 	font-size: 2em;
 	padding: 5px;
@@ -232,6 +250,7 @@ h2 {
 	border: 1px solid #999;
 	height: 150px;
 	width: 98vw;
+	max-width: 800px;  /* compatibility large screen fallback*/
 	margin: 25px auto;
 }
 
@@ -258,6 +277,7 @@ h2 {
 .about-me {
 	position: relative;
 	width: 80vw;
+	max-width: 800px;  /* compatibility large screen fallback*/
 	margin: 5px auto 60px auto;
 	font-size: 2em;
 	padding: 5px;
@@ -369,9 +389,9 @@ h2 {
 	text-align: center;
 	font-size: 3em;
 	width: 100vw;
+	max-width: 1200px;  /* compatibility large screen fallback*/
 	height: 20vh;
-	margin-top: 35%;
-	margin-bottom: 15%;
+	margin: 35% auto 15% auto;
 }
 .contact-links {
 	display: inline;
@@ -394,6 +414,7 @@ footer {
 .footer {
 	text-align: center;
 	width: 60vw;
+	max-width: 960px;  /* compatibility large screen fallback*/
 	height: 5vh;
 	margin: auto;
 }
@@ -406,7 +427,7 @@ footer {
 }
 
 /*continue with max-width to maintain a good fallback layout */
-@media screen and (min-width: 960px){
+/* @media screen and (min-width: 960px){
 	.blurb p {
 		max-width: 800px;
 		margin: auto;
