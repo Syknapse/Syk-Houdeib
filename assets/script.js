@@ -26,9 +26,29 @@ $(function(){
 });
 
 // project card clicking icon reveals highlights card
+
 $(function(){
 	$('.plus').on('click', function(){
 		// $('section').removeClass('clear-header');
 		$('.project-card-description').toggleClass('swing-away');
 	});
 });
+
+// $(function(){
+// 	$('.plus').on('click', function(){
+// 		$('.project-card-description').removeClass('swing-away');
+//     	$(".project-card-description").eq($(this.element).index()).addClass('swing-away');
+// 	});
+// });
+
+
+	
+
+
+// var buttons = $('.plus');
+// for(var i = 0, i < buttons.length; i++){
+// 	buttons[i].on('click', function(){
+// 		// $('section').removeClass('clear-header');
+// 		$('.project-card-description').toggleClass('swing-away');
+// 	});
+// }
