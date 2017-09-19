@@ -328,7 +328,6 @@ h2 {
 	height: 350px;
 	width: 300px;
 	margin: auto;
-	transition: .9s;
 }
 
 .project-image {
@@ -389,13 +388,17 @@ h2 {
 	.project-cards {
 		position: relative;
 		height: 350px;
+		overflow: hidden;
 	}
 	.project-card-description {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 50%;
+		left: 50%;
 		z-index: 2;
 		background-color: white;
+		transform: translate(-50%, -50%);
+		transform-origin: 90% 0;
+		transition: .5s ease-out;
 		
 	}
 	.project-card-highlights {
@@ -413,7 +416,6 @@ h2 {
 		z-index: 5;
 	}
 	.swing-away {
-		/*transform: translateX(-90%);*/
 		transform: translate(-50%, -50%) rotate(-110deg);
 	}
 }
