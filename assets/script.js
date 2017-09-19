@@ -27,12 +27,25 @@ $(function(){
 
 // project card clicking icon reveals highlights card
 
-$(function(){
-	$('.plus').on('click', function(){
-		// $('section').removeClass('clear-header');
-		$('.project-card-description').toggleClass('swing-away');
-	});
+// $(function(){
+// 	$('.plus').on('click', function(){
+// 		// $('section').removeClass('clear-header');
+// 		$('.project-card-description').toggleClass('swing-away');
+// 	});
+// });
+
+
+$('.plus').click(function(){
+  var descriptionCard = '.description-' + $(this).data('project');
+  // $('.exp-info').not(infoPanel).hide();
+  $(descriptionCard).toggleClass('swing-away');
 });
+
+// $('.exp-icons').click(function(){
+//   var infoPanel = '.exp-info-' + $(this).data('info');
+//   $('.exp-info').not(infoPanel).hide();
+//   $(infoPanel).toggle();
+
 
 // $(function(){
 // 	$('.plus').on('click', function(){
