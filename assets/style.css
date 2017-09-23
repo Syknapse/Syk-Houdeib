@@ -81,6 +81,14 @@ nav {
 	-webkit-transition: transform .4s ease;
 	transition: transform .4s ease;
 }
+@media screen and (min-width: 960px){
+	nav {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		/*width: 10px; ??? width not changing and nav on top of everything*/
+	}
+}
 
 .open {
 	-webkit-transform: translateX(0);
@@ -385,10 +393,18 @@ h2 {
 
 /* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
 @supports (display: flex){
+	.projects-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		max-width: 800px;
+		margin: auto;
+	}
 	.project-cards {
 		position: relative;
 		height: 350px;
 		overflow: hidden;
+		margin: 8vh 20px;
 	}
 	.project-card-description {
 		position: absolute;
@@ -466,13 +482,11 @@ footer {
 	color: #10cc75; 
 }
 
-/*continue with max-width to maintain a good fallback layout */
-/* @media screen and (min-width: 960px){
-	.blurb p {
-		max-width: 800px;
-		margin: auto;
-	}
-	.skills-info {
-		max-width: 800px;  /*do you need media queries for these or they can just be added in main style?*/
+
+@supports (grid-area: auto){
+	@media screen and (min-width: 960px){
+		/*body {
+			background-color: blue;
+		}*/
 	}
 }
