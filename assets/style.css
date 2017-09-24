@@ -31,17 +31,20 @@ header {
 .name {
 	float: left;
 	width: 80vw;
+	transition: .1s;
 } 
 
 header h1 {
 	color: #7158ff;
 	padding-left: 20vw;
+	transition: .1s;
 }
 
 header p {
 	color: #10cc75;
 	padding-left: 20vw;
 	font-size: 1.2em;
+	transition: .1s;
 }
 
 /* #nav-btn */
@@ -53,6 +56,7 @@ header span {
 	font-size: 2.8em;
 	cursor: pointer;
 	z-index: 6;
+	transition: .4s;
 }
 
 /* --------------- header END --------------- */
@@ -66,8 +70,8 @@ nav {
 	height: 100%;  /*fallback for no calc support*/
 	height: calc(100vh - 50px);  /*depending on header height*/
 	width: 45vw;
-	max-width: 300px;
-	min-width: 200px;
+	max-width: 200px;
+	min-width: 136px;
 	background-color: black;
 	color: #7158ff;
 	font-size: 1.8em;
@@ -81,14 +85,23 @@ nav {
 	-webkit-transition: transform .4s ease;
 	transition: transform .4s ease;
 }
-@media screen and (min-width: 960px){
+
+nav a {
+	display: block;
+	text-align: left;
+	margin-left: 3vw;
+}
+
+/* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
+@supports (display: flex) {
 	nav {
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-		/*width: 10px; ??? width not changing and nav on top of everything*/
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0;
 	}
 }
+/* ¡¡ Progressive Enhancement END ¡¡ */
 
 .open {
 	-webkit-transform: translateX(0);
@@ -100,27 +113,32 @@ nav {
 	color: #307f58;
 }
 
-nav a {
-	display: block;
-	text-align: left;
-	margin-left: 3vw;
-}
-
 nav a i {
 	color: #10cc75;
 }
 
 /* --- nav to section --- */
-section {
+/*section {
 	margin-bottom: 15vh;
 	transition: .8s;
 }
 
 .clear-header {
 	transform: translateY(10vh);
-}
+}*/
 
 /* --------------- nav END --------------- */
+
+
+/* ~~~~ All sections container ~~~~ */
+.full-container {
+	/* clear header */
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	transition: .4s;
+}
+/* ~~~~ All sections container END ~~~~ */
 
 
 /* ----- section titles start----- */
@@ -396,6 +414,7 @@ h2 {
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;  /* fallback Edge */
 		justify-content: space-evenly;
 		max-width: 800px;
 		margin: auto;
@@ -435,6 +454,7 @@ h2 {
 		transform: translate(-50%, -50%) rotate(-110deg);
 	}
 }
+/* ¡¡ Progressive Enhancement END ¡¡ */
 
 
 /* --------------- projects END --------------- */
@@ -482,6 +502,59 @@ footer {
 	color: #10cc75; 
 }
 
+
+/* \\\\\\\\\\ wide screen media query ////////// */
+
+@media screen and (min-width: 1200px){
+	.full-container {
+		/* clear nav */
+		width: 83%; /*fallback for no calc support*/
+		width: calc(100% - 200px);
+		right: 0;
+		transition: .4s;
+	}
+	nav {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		min-width: unset;
+		padding: 0;
+		width: 200px;
+	}
+	/* header */
+	.name {
+		width: 100%;
+		transition: .4s;
+	}
+	header h1 {
+		color: #7158ff;
+		padding-left: 200px;
+		transition: .4s;
+	}
+	header p {
+		color: #10cc75;
+		padding-left: 200px;
+		font-size: 1.2em;
+		transition: .4s;
+	}
+	/* #nav-btn */
+	header span {
+		transform: translateX(400%);
+		transition: .4s;
+	}
+
+	/* home */
+	#home img {
+		margin: 80px auto 40px 45%; /*fallback for no calc support*/
+		margin: 80px calc(50% - 75px) 40px calc(50% - 75px);  /*depending on header height*/
+	}
+
+	/* contact */
+	.contact-links-container {
+		width: unset;
+	}
+}
+/* \\\\\\\\\\ wide screen media query END ////////// */
 
 @supports (grid-area: auto){
 	@media screen and (min-width: 960px){
