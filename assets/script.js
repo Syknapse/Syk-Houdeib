@@ -2,28 +2,33 @@ $(document).ready();
 
 ////////// Nav show & hide ///////////////////
 
-$(function(){
-    $('#nav-btn').on('click', function(){
-        $('nav').toggleClass('open');
-        $('#nav-btn').toggleClass('open-btn');
-    });
+$('#nav-btn').on('click', function(){
+    $('nav').toggleClass('open');
+    $('#nav-btn').toggleClass('open-btn');
+});
+	
+$('nav a, .full-container').on('click', function(){
+    $('nav').removeClass('open');
+    $('#nav-btn').removeClass('open-btn');
 });
 
-$(function(){
-	// refactor?? clicking anywhere on nav, and only on sections
-    $('nav, section').on('click', function(){
-        $('nav').removeClass('open');
-        $('#nav-btn').removeClass('open-btn');
-    });
-});
 
-// NAv to section add class to section when clicked from menu to clear header
-$(function(){
-	$('nav a').on('click', function(){
-		$('section').removeClass('clear-header');
-		$($(this).attr('href')).addClass('clear-header');
+// NAv to section smooth scrolling
+
+var $root = $('html, body');
+
+$('nav a').on('click', function(){
+	var anchorName = $(this).attr('href');
+	$root.animate({
+		scrollTop: $(anchorName).offset().top
+	}, 600, function(){
+		// add #anchor name to the url
+		window.location.hash = anchorName;
 	});
+	// cache $('html, body') for better performance
+	return false
 });
+
 
 // project card clicking icon reveals highlights card
 

@@ -121,10 +121,18 @@ nav a i {
 /*section {
 	margin-bottom: 15vh;
 	transition: .8s;
+}*/
+
+.anchor-clear {
+	display: block;
+	height: 50px;
+	margin-top: -50px;
+	visibility: hidden;
+	transition: 2.8s;
 }
 
-.clear-header {
-	transform: translateY(10vh);
+/*.clear-header {
+	height: 50px;
 }*/
 
 /* --------------- nav END --------------- */
@@ -195,7 +203,7 @@ h2 {
 
 
 /* --------------- HOME start --------------- */
-#home img {
+.home-img {
 	margin: 80px auto 40px 30vw; /*fallback for no calc support*/
 	margin: 80px calc(50vw - 75px) 40px calc(50vw - 75px);  /*depending on header height*/
 	width: 150px;
@@ -544,7 +552,7 @@ footer {
 	}
 
 	/* home */
-	#home img {
+	.home-img {
 		margin: 80px auto 40px 45%; /*fallback for no calc support*/
 		margin: 80px calc(50% - 75px) 40px calc(50% - 75px);  /*depending on header height*/
 	}
