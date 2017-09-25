@@ -35,4 +35,5 @@ $('nav a').on('click', function(){
 $('.plus').click(function(){
   var descriptionCard = '.description-' + $(this).data('project');
   $(descriptionCard).toggleClass('swing-away');
+  $(this).toggleClass('plus-rotate');
 });

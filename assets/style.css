@@ -22,7 +22,7 @@ main green: #10cc75    */
 header {
 	position: fixed;
 	z-index: 5;
-	width: 100vw;
+	width: 100%;
 	height: 50px;  /*header height*/
 	background-color: black;
 	text-align: center;
@@ -86,8 +86,8 @@ nav {
 	-webkit-transform: translateX(-100%);
 	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
-	-webkit-transition: transform .6s ease-in;
-	transition: transform .6s ease-in;
+	-webkit-transition: transform .4s ease-in;
+	transition: transform .4s ease-in;
 }
 
 nav a {
@@ -149,7 +149,7 @@ nav a i {
 .section-title {
 	position: relative;
 	height: 60px;
-	width: 100vw;
+	width: 100%;
 	max-width: 960px;  /* compatibility large screen fallback */
 	margin: 10vh auto 8vh auto;
 }
@@ -201,7 +201,7 @@ h2 {
 /* --------------- HOME start --------------- */
 .home-img {
 	margin: 80px auto 40px 30vw; /*fallback for no calc support*/
-	margin: 80px calc(50vw - 75px) 40px calc(50vw - 75px);  /*depending on header height*/
+	margin: 80px calc(50% - 75px) 40px calc(50% - 75px);  /*depending on header height*/
 	width: 150px;
 	border-radius: 50%;
 }
@@ -277,12 +277,18 @@ h2 {
 	text-align: justify;
 }
 
+/*.skill-cards-container {
+	text-align: center;
+}*/
+
 .skill-cards {
 	border: 1px solid #999;
 	height: 150px;
-	width: 98vw;
-	max-width: 800px;  /* compatibility large screen fallback*/
+	width: 95%;
+	box-sizing: border-box;
+	max-width: 500px;  /* compatibility large screen fallback*/
 	margin: 25px auto;
+	overflow: hidden;
 }
 
 .skill-cards img {
@@ -299,6 +305,16 @@ h2 {
 .skill-cards p {
 	font-size: 2em;
 	padding: 3px 3px 3px 155px;  /*depending on image size*/
+}
+
+@media screen and (max-width: 320px){
+	.skill-cards h3 {
+		font-size: 1.8em;
+	}
+
+	.skill-cards p {
+		font-size: 1.8em;
+	}
 }
 
 /* --------------- skills END --------------- */
@@ -357,12 +373,12 @@ h2 {
 
 .project-card-description {
 	height: 350px;
-	width: 300px;
+	width: 100%;
 	margin: auto;
 }
 
 .project-image {
-	width: 300px;
+	width: 100%;
 	height: 200px;
 	text-align: center;
 }
@@ -385,7 +401,7 @@ h2 {
 
 .project-card-highlights {
 	height: 350px;
-	width: 300px;
+	width: 100%;
 	margin: auto;
 	text-align: center;
 }
@@ -446,13 +462,30 @@ h2 {
 		left: 0;
 		z-index: 1;
 		background-color: #ddd;
+		box-sizing: border-box;
+    	padding-bottom: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.project-card-highlights a {
+		padding: 5px 15%;
+	}
+	@media screen and (max-width: 300px){
+		.project-card-highlights a {
+			padding: 5px 5%;
+		}
 	}
 	.plus {
 		display: block;
 		position: absolute;
 		top: 0;
 		right: 0;
-		z-index: 5;
+		z-index: 3;
+		transition: .5s ease-out;
+	}
+	.plus-rotate {
+		transform: rotate(-110deg);
 	}
 	.swing-away {
 		transform: translate(-50%, -50%) rotate(-110deg);
@@ -468,7 +501,7 @@ h2 {
 .contact-links-container {
 	text-align: center;
 	font-size: 3em;
-	width: 100vw;
+	width: 100%;
 	max-width: 1200px;  /* compatibility large screen fallback */
 	height: 20vh;
 	margin: 35% auto 15% auto;
@@ -525,7 +558,7 @@ footer {
 		}
 		.skill-cards {
 			width: 40%;
-			/*FIX %%%% not breaking back to < 960px screen correctly*/
+			margin: 25px 5%;
 		}
 	}
 }
