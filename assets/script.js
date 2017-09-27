@@ -37,3 +37,28 @@ $('.plus').click(function(){
   $(descriptionCard).toggleClass('swing-away');
   $(this).toggleClass('plus-rotate');
 });
+
+
+// ********* waypoints *********
+
+// section titles effect
+var sectionTitles = $('.section-title').waypoint({
+  handler: function(direction) {
+    if(direction === 'down'){
+    	// $(this.element).children('.title-primary').addClass('intensify-color');
+    	$(this.element).children('.title-secondary').addClass('slide-right');
+    	$(this.element).children('.title-tertiary').addClass('slide-left');
+    }
+  }, 
+  offset: '50%' 
+})
+
+// nav active section
+// $('span.anchor-clear').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a i').removeClass('active-nav');
+//     $('nav a i').eq($(this.element).index()).addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });

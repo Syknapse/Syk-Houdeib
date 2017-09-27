@@ -104,6 +104,9 @@ nav a {
 		flex-direction: column;
 		padding: 0;
 	}
+	.active-nav {
+		/*color: yellow;*/
+	}
 }
 /* ¡¡ Progressive Enhancement END ¡¡ */
 
@@ -170,7 +173,6 @@ h2 {
 	width: 60vw;
 	max-width: 800px;  /* compatibility large screen fallback */
 	height: 30px;
-	
 }
 
 .title-secondary {
@@ -194,6 +196,38 @@ h2 {
 	max-width: 700px;  /* compatibility large screen fallback */
 	height: 3px;
 }
+
+/* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
+/*waypoint section title effect*/
+@supports (display: flex){
+	/*.title-primary {
+		height: 10px;
+		transition: .3s;
+	}
+	.intensify-color {
+		height: 30px;
+	}*/
+
+	.title-secondary {
+		width: 0;
+		transition: .4s;
+	}
+	.slide-right {
+		width: 70vw;
+	}
+
+	.title-tertiary {
+		width: 0;
+		left: 0;
+		transition: width .2s, left .5s .2s;
+	}
+	.slide-left {
+		width: 49vw;
+		left: 24vw;
+	}
+}
+/* ¡¡ Progressive Enhancement END ¡¡ */
+
 
 /* ----- section titles end ----- */
 
@@ -485,7 +519,7 @@ h2 {
 		transition: .5s ease-out;
 	}
 	.plus-rotate {
-		transform: rotate(-110deg);
+		transform: rotate(-270deg);
 	}
 	.swing-away {
 		transform: translate(-50%, -50%) rotate(-110deg);
