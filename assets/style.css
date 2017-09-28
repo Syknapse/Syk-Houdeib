@@ -201,11 +201,13 @@ h2 {
 /*waypoint section title effect*/
 @supports (display: flex){
 	/*.title-primary {
-		height: 10px;
-		transition: .3s;
+		background: #7158ff;
+		transition: .8s .3s;
 	}
 	.intensify-color {
-		height: 30px;
+		background: -webkit-linear-gradient(to right, #5f45f7, #7158ff, #d7d2f4);  
+		background: linear-gradient(to right, #5f45f7, #7158ff, #d7d2f4);
+
 	}*/
 
 	.title-secondary {
