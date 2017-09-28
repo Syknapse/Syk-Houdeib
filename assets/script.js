@@ -54,11 +54,22 @@ var sectionTitles = $('.section-title').waypoint({
 })
 
 // nav active section
-// $('span.anchor-clear').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a i').removeClass('active-nav');
-//     $('nav a i').eq($(this.element).index()).addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
+$('section').waypoint(function(direction) {
+  if (direction === 'down') {
+    $('nav a i').removeClass('active-nav');
+    $('nav a i').eq($(this.element).index()).addClass('active-nav');
+  }
+}, {
+  offset: '20%'
+});
+
+$('section').waypoint(function(direction) {
+  if (direction === 'up') {
+    $('nav a i').removeClass('active-nav');
+    $('nav a i').eq($(this.element).index()).addClass('active-nav');
+  }
+}, {
+  offset: function() {
+	  return this.element.offsetHeight / -2;
+	}
+});
