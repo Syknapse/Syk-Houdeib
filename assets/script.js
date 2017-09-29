@@ -42,10 +42,9 @@ $('.plus').click(function(){
 // ********* waypoints *********
 
 // section titles effect
-var sectionTitles = $('.section-title').waypoint({
+$('.section-title').waypoint({
   handler: function(direction) {
     if(direction === 'down'){
-    	// $(this.element).children('.title-primary').addClass('intensify-color');
     	$(this.element).children('.title-secondary').addClass('slide-right');
     	$(this.element).children('.title-tertiary').addClass('slide-left');
     }
@@ -69,6 +68,7 @@ $('section').waypoint(function(direction) {
     $('nav a i').eq($(this.element).index()).addClass('active-nav');
   }
 }, {
+	// fix offset triggering too late or early because of variable section sizes
   offset: function() {
 	  return this.element.offsetHeight / -2;
 	}

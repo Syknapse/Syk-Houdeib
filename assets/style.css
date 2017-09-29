@@ -200,16 +200,6 @@ h2 {
 /* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
 /*waypoint section title effect*/
 @supports (display: flex){
-	/*.title-primary {
-		background: #7158ff;
-		transition: .8s .3s;
-	}
-	.intensify-color {
-		background: -webkit-linear-gradient(to right, #5f45f7, #7158ff, #d7d2f4);  
-		background: linear-gradient(to right, #5f45f7, #7158ff, #d7d2f4);
-
-	}*/
-
 	.title-secondary {
 		width: 0;
 		transition: .4s;
@@ -577,6 +567,8 @@ footer {
 }
 
 
+/* \\\\\\\\\\\\\  media queries ///////////// */
+
 @supports (display: flex){
 	@media screen and (min-width: 960px){
 
@@ -599,7 +591,7 @@ footer {
 	}
 }
 
-/* \\\\\\\\\\ wide screen media query ////////// */
+/* \\\\\\\ wide screen media query /////// */
 
 @media screen and (min-width: 1200px){
 	.full-container {
