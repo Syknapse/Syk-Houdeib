@@ -256,13 +256,20 @@ h2 {
 .blurb {
 	text-align: center;
 	font-size: 3em;
-	margin: 8vh 3vw 10vh 3vw;
+	margin: 5vh 3vw 10vh 3vw;
+	-webkit-transition: .4s;
+	transition: .4s;
 }
 
 .blurb p {
 		max-width: 800px;
 		margin: auto;
-	}
+}
+
+.blurb #handle {
+	font-size: .7em;
+	color: #7158ff;
+}
 
 /* --------------- home END --------------- */
 
@@ -303,10 +310,6 @@ h2 {
 	text-align: justify;
 }
 
-/*.skill-cards-container {
-	text-align: center;
-}*/
-
 .skill-cards {
 	border: 1px solid #999;
 	height: 150px;
@@ -329,7 +332,7 @@ h2 {
 }
 
 .skill-cards p {
-	font-size: 2em;
+	font-size: 1.7em;
 	padding: 3px 3px 3px 155px;  /*depending on image size*/
 }
 
@@ -339,7 +342,7 @@ h2 {
 	}
 
 	.skill-cards p {
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 }
 
@@ -355,6 +358,10 @@ h2 {
 	font-size: 2em;
 	padding: 5px;
 	text-align: justify;
+}
+
+.about-me span {
+	font-size: .8em;
 }
 
 .about-background-container {
@@ -577,6 +584,7 @@ footer {
 			max-width: unset;
 		}
 
+		/* skills */
 		.skill-cards-container {
 			display: flex;
 			flex-wrap: wrap;
@@ -587,6 +595,9 @@ footer {
 		.skill-cards {
 			width: 40%;
 			margin: 25px 5%;
+		}
+		.skill-cards p {
+			font-size: 1.7em;
 		}
 	}
 }
@@ -640,6 +651,11 @@ footer {
 	.home-img {
 		margin: 80px auto 40px 45%; /*fallback for no calc support*/
 		margin: 80px calc(50% - 75px) 40px calc(50% - 75px);  /*depending on header height*/
+	}
+	.blurb {
+		margin: 8vh 3vw 10vh 3vw;
+		-webkit-transition: .4s;
+		transition: .4s;
 	}
 
 	/* contact */
