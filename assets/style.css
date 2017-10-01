@@ -314,6 +314,7 @@ h2 {
 	border: 1px solid #999;
 	height: 150px;
 	width: 95%;
+	background-color: #f0f7fa;
 	box-sizing: border-box;
 	max-width: 500px;  /* compatibility large screen fallback*/
 	margin: 25px auto;
@@ -494,7 +495,7 @@ h2 {
 		top: 0;
 		left: 0;
 		z-index: 1;
-		background-color: #ddd;
+		background-color: #f0f7fa;
 		box-sizing: border-box;
     	padding-bottom: 5px;
 		display: flex;
@@ -511,6 +512,7 @@ h2 {
 	}
 	.plus {
 		display: block;
+		color: #777;
 		position: absolute;
 		top: 0;
 		right: 0;
