@@ -3,7 +3,7 @@
 
 <p>A project to build a personal portfolio page from scratch following progressive enhancement and mobile-first principles. 
 <br>The basic single-column layout was designed with maximum compatibility in mind. Then using multiple techniques (using the CSS cascade, @media queries and @supports queries) the site is progressively enhanced for a better and more appealing experience for users with more modern browsers and larger screens.</p>
-<img src="https://user-images.githubusercontent.com/29199184/31143027-44c85698-a87c-11e7-9845-39b9892ed7cf.png">
+<a href="https://syknapse.github.io/Syk-Houdeib"><img src="https://user-images.githubusercontent.com/29199184/31143027-44c85698-a87c-11e7-9845-39b9892ed7cf.png"></a>
 
 <h3>Technologies Used</h3>
 <ul>
