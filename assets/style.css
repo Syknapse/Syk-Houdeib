@@ -337,6 +337,31 @@ h2 {
 	padding: 3px 3px 3px 155px;  /*depending on image size*/
 }
 
+/*skills link button*/
+.skills-button-container {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.skills-button-link {
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #666;
+	padding: 10px 20px;
+	border: 2px solid #666;
+	text-transform: uppercase;
+	border-radius: 5px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.skills-button-link:hover {
+	background-color: #666;
+	color: white;
+	border-radius: 15px;
+	border: 3px solid black;
+}
+
 @media screen and (max-width: 320px){
 	.skill-cards h3 {
 		font-size: 1.8em;
@@ -365,6 +390,7 @@ h2 {
 	font-size: .8em;
 }
 
+/*about link button*/
 .about-background-container {
 	text-align: center;
 }
