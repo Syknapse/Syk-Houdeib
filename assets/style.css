@@ -31,23 +31,23 @@ header {
 .name {
 	float: left;
 	width: 80vw;
-	-webkit-transition: .1s ease-in;
-	transition: .1s ease-in;
+	-webkit-transition: 0.1s ease-in;
+	transition: 0.1s ease-in;
 } 
 
 header h1 {
 	color: #7158ff;
 	padding-left: 20vw;
-	-webkit-transition: .1s ease-in;
-	transition: .1s ease-in;
+	-webkit-transition: 0.1s ease-in;
+	transition: 0.1s ease-in;
 }
 
 header p {
 	color: #10cc75;
 	padding-left: 20vw;
 	font-size: 1.2em;
-	-webkit-transition: .1s ease-in;
-	transition: .1s ease-in;
+	-webkit-transition: 0.1s ease-in;
+	transition: 0.1s ease-in;
 }
 
 /* #nav-btn */
@@ -59,8 +59,8 @@ header span {
 	font-size: 2.8em;
 	cursor: pointer;
 	z-index: 6;
-	-webkit-transition: .4s ease-in;
-	transition: .4s ease-in;
+	-webkit-transition: 0.4s ease-in;
+	transition: 0.4s ease-in;
 }
 
 /* --------------- header END --------------- */
@@ -86,8 +86,8 @@ nav {
 	-webkit-transform: translateX(-100%);
 	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
-	-webkit-transition: transform .4s ease-in;
-	transition: transform .4s ease-in;
+	-webkit-transition: transform 0.4s ease-in;
+	transition: transform 0.4s ease-in;
 }
 
 nav a {
@@ -105,7 +105,7 @@ nav a {
 		padding: 0;
 	}
 	.active-nav {
-		color: #FFF500;
+		color:fff500;
 	}
 }
 /* ¡¡ Progressive Enhancement END ¡¡ */
@@ -117,7 +117,7 @@ nav a {
 }
 
 .open-btn {
-	color: #FFF500;  /*#307f58*/
+	color: #fff500;  /*#307f58*/
 }
 
 nav a i {
@@ -142,8 +142,8 @@ nav a i {
 	position: absolute;
 	top: 50px;
 	width: 100%;
-	-webkit-transition: .6s ease-in;
-	transition: .6s ease-in;
+	-webkit-transition: 0.6s ease-in;
+	transition: 0.6s ease-in;
 }
 /* ~~~~ All sections container END ~~~~ */
 
@@ -169,7 +169,7 @@ h2 {
 	position: absolute;
 	top: 40%;
 	z-index: 1;
-	background-color: rgba(113, 88, 255, .5);
+	background-color: rgba(113, 88, 255, 0.5);
 	width: 60vw;
 	max-width: 800px;  /* compatibility large screen fallback */
 	height: 30px;
@@ -180,7 +180,7 @@ h2 {
 	top: 54%;
 	right: 0;
 	z-index: 2;
-	background-color: rgba(16, 204, 117, .5);
+	background-color: rgba(16, 204, 117, 0.5);
 	width: 70vw;
 	max-width: 900px;  /* compatibility large screen fallback */
 	height: 12px;
@@ -191,7 +191,7 @@ h2 {
 	bottom: 7%;
 	left: 24vw;
 	z-index: 3;
-	background-color: rgba(255, 84, 76, .8);
+	background-color: rgba(255, 84, 76, 0.8);
 	width: 49vw;
 	max-width: 700px;  /* compatibility large screen fallback */
 	height: 3px;
@@ -202,7 +202,7 @@ h2 {
 @supports (display: flex){
 	.title-secondary {
 		width: 0;
-		transition: .4s;
+		transition: 0.4s;
 	}
 	.slide-right {
 		width: 70vw;
@@ -211,7 +211,7 @@ h2 {
 	.title-tertiary {
 		width: 0;
 		left: 0;
-		transition: width .2s, left .5s .2s;
+		transition: width 0.2s, left 0.5s 0.2s;
 	}
 	.slide-left {
 		width: 49vw;
@@ -245,8 +245,8 @@ h2 {
 	padding-left: 3vw;
 	padding-right: 3vw;
 	border-radius: 1.9em;
-	-webkit-transition: .2s ease;
-	transition: .2s ease;
+	-webkit-transition: 0.2s ease;
+	transition: 0.2s ease;
 }
 
 .home-links:hover {
@@ -257,8 +257,8 @@ h2 {
 	text-align: center;
 	font-size: 3em;
 	margin: 5vh 3vw 10vh 3vw;
-	-webkit-transition: .4s;
-	transition: .4s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .blurb p {
@@ -267,7 +267,7 @@ h2 {
 }
 
 .blurb #handle {
-	font-size: .7em;
+	font-size: 0.7em;
 	color: #7158ff;
 }
 
@@ -283,7 +283,7 @@ h2 {
 	width: 92vw;
 	max-width: 920px;
 	height: 100%;
-	border-bottom: 5px solid rgba(113, 88, 255, .3);
+	border-bottom: 5px solid rgba(113, 88, 255, 0.3);
 	top: 2%;
 	left: -5%;
 }
@@ -293,7 +293,7 @@ h2 {
 	width: 80vw;
 	max-width: 800px;
 	height: 100%;
-	border-left: 2px solid rgba(255, 84, 76, .5);
+	border-left: 2px solid rgba(255, 84, 76, 0.5);
 	top: 13%;
 	left: -2%;
 }
@@ -351,8 +351,8 @@ h2 {
 	border: 2px solid #666;
 	text-transform: uppercase;
 	border-radius: 5px;
-	-webkit-transition: .3s;
-	transition: .3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .skills-button-link:hover {
@@ -387,7 +387,7 @@ h2 {
 }
 
 .about-me span {
-	font-size: .8em;
+	font-size: 0.8em;
 }
 
 /*about link button*/
@@ -403,8 +403,8 @@ h2 {
 	border: 2px solid #666;
 	text-transform: uppercase;
 	border-radius: 5px;
-	-webkit-transition: .3s;
-	transition: .3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .about-background-link:hover {
@@ -476,7 +476,7 @@ h2 {
 .project-card-highlights p {
 	padding: 20px 5px 5px 5px;
 	text-transform: uppercase;
-	font-size: .8em;
+	font-size: 0.8em;
 }
 
 .project-card-highlights a {
@@ -508,8 +508,8 @@ h2 {
 		background-color: white;
 		transform: translate(-50%, -50%);
 		transform-origin: 90% 0;
-		-webkit-transition: .5s ease-out;
-		transition: .5s ease-out;
+		-webkit-transition: 0.5s ease-out;
+		transition: 0.5s ease-out;
 		
 	}
 	.project-card-highlights {
@@ -539,7 +539,7 @@ h2 {
 		top: 0;
 		right: 0;
 		z-index: 3;
-		transition: .5s ease-out;
+		transition: 0.5s ease-out;
 	}
 	.plus-rotate {
 		transform: rotate(-270deg);
@@ -569,8 +569,8 @@ h2 {
 	margin: 2vw;
 	line-height: 10vh;
 	border-radius: 50%;
-	-webkit-transition: .5s ease;
-	transition: .5s ease;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
 }
 
 .contact-links:hover {
@@ -634,8 +634,8 @@ footer {
 		width: 83%; /*fallback for no calc support*/
 		width: calc(100% - 200px);
 		right: 0;
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 	nav {
 		-webkit-transform: translateX(0);
@@ -648,27 +648,27 @@ footer {
 	/* header */
 	.name {
 		width: 100%;
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 	header h1 {
 		color: #7158ff;
 		padding-left: 200px;
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 	header p {
 		color: #10cc75;
 		padding-left: 200px;
 		font-size: 1.2em;
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 	/* #nav-btn */
 	header span {
 		transform: translateX(400%);
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 
 	/* home */
@@ -678,8 +678,8 @@ footer {
 	}
 	.blurb {
 		margin: 8vh 3vw 10vh 3vw;
-		-webkit-transition: .4s;
-		transition: .4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
 	}
 
 	/* contact */
