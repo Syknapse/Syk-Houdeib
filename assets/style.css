@@ -311,6 +311,7 @@ h2 {
 }
 
 .skill-cards {
+	display: flex;
 	border: 1px solid #999;
 	height: 150px;
 	width: 95%;
@@ -322,19 +323,18 @@ h2 {
 }
 
 .skill-cards img {
-	float: left;
 	width: 150px;
 	height: 150px;
 }
 
 .skill-cards h3 {
 	font-size: 2em;
-	padding: 3px 3px 3px 155px;  /*depending on image size*/
+	padding: 3px 4px;
 }
 
 .skill-cards p {
 	font-size: 1.7em;
-	padding: 3px 3px 3px 155px;  /*depending on image size*/
+	padding: 3px 4px;
 }
 
 /*skills link button*/
