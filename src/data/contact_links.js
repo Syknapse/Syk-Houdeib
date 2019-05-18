@@ -2,12 +2,6 @@ let contactLinks = [
     {
       style: 'contact-links',
       link: 'https://www.linkedin.com/in/syk-houdeib/',
-      title: 'tasty',
-      icon: 'fa-send'
-    },
-    {
-      style: 'contact-links',
-      link: 'https://www.linkedin.com/in/syk-houdeib/',
       title: 'Linkedin Profile',
       icon: 'fa-linkedin'
     },
