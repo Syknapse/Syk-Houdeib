@@ -2,7 +2,7 @@ const GITHUB = `https://github.com/Syknapse`
 const SYKNAPSE = `https://syknapse.github.io`
 const IMAGES = `assets/images`
 
-const Projects = [
+const projects = [
   {
     key: 'pixel',
     title: 'Pixel Art Maker',
@@ -257,4 +257,4 @@ const Projects = [
   },
 ]
 
-export default Projects
+export default projects

@@ -1,11 +1,46 @@
-// Refactor
-
-import Projects from '../data/projects.js'
+import navCategories from '../data/nav_categories.js'
+import featuredLinks from '../data/featured_links.js'
+import projects from '../data/projects.js'
+import contactLinks from '../data/contact_links.js'
+import { NavButton } from './components/NavButton.js'
+import { ContactButton } from './components/ContactButton.js'
 import { ProjectCard } from './components/ProjectCard.js'
 
-const projectContainer = document.querySelector('.projects-container')
-const projectCards = Projects.map( project => ProjectCard(project) ).join('')
-projectContainer.innerHTML = projectCards
+const sections = [
+  {
+    name: 'Nav Buttons',
+    target: 'nav',
+    data: navCategories,
+    component: NavButton,
+  },
+  {
+    name: 'Featured Links',
+    target: '.home-links-container',
+    data: featuredLinks,
+    component: ContactButton,
+  },
+  {
+    name: 'Projects',
+    target: '.projects-container',
+    data: projects,
+    component: ProjectCard,
+  },
+  {
+    name: 'Contact Links',
+    target: '.contact-links-container',
+    data: contactLinks,
+    component: ContactButton,
+  },
+]
+
+function renderElements(params) {
+  const container = document.querySelector(params.target)
+  const elements = params.data.map( item => params.component(item) ).join('')
+  container.innerHTML = elements
+
+}
+
+sections.map( params => renderElements(params) )
 
 
 // Legacy
