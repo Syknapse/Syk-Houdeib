@@ -1,3 +1,15 @@
+// Refactor
+
+import Projects from '../data/projects.js'
+import { ProjectCard } from './components/ProjectCard.js'
+
+const projectContainer = document.querySelector('.projects-container')
+const projectCards = Projects.map( project => ProjectCard(project) ).join('')
+projectContainer.innerHTML = projectCards
+
+
+// Legacy
+
 $(document).ready();
 
 ////////// Nav show & hide ///////////////////
@@ -6,14 +18,14 @@ $('#nav-btn').on('click', function(){
     $('nav').toggleClass('open');
     $('#nav-btn').toggleClass('open-btn');
 });
-	
+
 $('nav a, .full-container').on('click', function(){
     $('nav').removeClass('open');
     $('#nav-btn').removeClass('open-btn');
 });
 
 
-// NAv to section smooth scrolling
+// Nav to section smooth scrolling
 
 var $root = $('html, body');
 
@@ -48,8 +60,8 @@ $('.section-title').waypoint({
     	$(this.element).children('.title-secondary').addClass('slide-right');
     	$(this.element).children('.title-tertiary').addClass('slide-left');
     }
-  }, 
-  offset: '50%' 
+  },
+  offset: '50%'
 })
 
 // nav active section
