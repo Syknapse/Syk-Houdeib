@@ -6,25 +6,41 @@ import { NavButton } from './components/NavButton.js'
 import { ContactButton } from './components/ContactButton.js'
 import { ProjectCard } from './components/ProjectCard.js'
 
-// Render nav buttons
-const navBar = document.querySelector('nav')
-const navButtons = navCategories.map( category => NavButton(category) ).join('')
-navBar.innerHTML = navButtons
+const sections = [
+  {
+    name: 'Nav Buttons',
+    target: 'nav',
+    data: navCategories,
+    component: NavButton,
+  },
+  {
+    name: 'Featured Links',
+    target: '.home-links-container',
+    data: featuredLinks,
+    component: ContactButton,
+  },
+  {
+    name: 'Projects',
+    target: '.projects-container',
+    data: projects,
+    component: ProjectCard,
+  },
+  {
+    name: 'Contact Links',
+    target: '.contact-links-container',
+    data: contactLinks,
+    component: ContactButton,
+  },
+]
 
-// Render featured links
-const featuredLinksContainer = document.querySelector('.home-links-container')
-const featuredLinksButtons = featuredLinks.map( contact => ContactButton(contact) ).join('')
-featuredLinksContainer.innerHTML = featuredLinksButtons
+function renderElements(params) {
+  const container = document.querySelector(params.target)
+  const elements = params.data.map( item => params.component(item) ).join('')
+  container.innerHTML = elements
 
-// Render projects
-const projectContainer = document.querySelector('.projects-container')
-const projectCards = projects.map( project => ProjectCard(project) ).join('')
-projectContainer.innerHTML = projectCards
+}
 
-// Render contact links
-const contactContainer = document.querySelector('.contact-links-container')
-const contactButtons = contactLinks.map( contact => ContactButton(contact) ).join('')
-contactContainer.innerHTML = contactButtons
+sections.map( params => renderElements(params) )
 
 
 // Legacy
