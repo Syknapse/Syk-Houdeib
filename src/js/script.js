@@ -25,7 +25,7 @@ $('nav a, .full-container').on('click', function(){
 });
 
 
-// NAv to section smooth scrolling
+// Nav to section smooth scrolling
 
 var $root = $('html, body');
 
