@@ -4,8 +4,8 @@ let navCategories = [
       icon: 'fa-home'
     },
     {
-        key: 'skills',
-        icon: 'fa-line-chart'
+      key: 'skills',
+      icon: 'fa-line-chart'
     },
     {
       key: 'about',

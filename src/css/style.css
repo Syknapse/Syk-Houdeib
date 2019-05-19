@@ -270,6 +270,11 @@ h2 {
 .blurb #handle {
 	font-size: 0.7em;
 	color: #7158ff;
+	margin-bottom: 16px;
+}
+
+#handle span {
+	margin: 0 8px;
 }
 
 /* --------------- home END --------------- */
