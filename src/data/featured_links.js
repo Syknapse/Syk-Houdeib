@@ -19,9 +19,9 @@ let featuredLinks = [
     },
     {
       style: 'home-links',
-      link: 'https://codepen.io/Syknapse/',
-      title: 'CodePen Projects',
-      icon: 'fa-codepen'
+      link: 'https://medium.com/@Syknapse',
+      title: 'Read my articles on Medium',
+      icon: 'fa-medium'
     },
 ]
 

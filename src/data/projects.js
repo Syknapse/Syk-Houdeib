@@ -4,7 +4,6 @@ const IMAGES = `assets/images`
 
 const projects = [
   {
-    key: 'pixel',
     title: 'Pixel Art Maker',
     subtitle: 'A web app to draw pixelated art',
     image: {
@@ -26,7 +25,6 @@ const projects = [
     github_link: `${GITHUB}/Pixel-art-maker`,
   },
   {
-    key: 'contribute',
     title: 'Contribute To This Project',
     subtitle: 'A tutorial to help first-timers make their first open source contribution on GitHub',
     image: {
@@ -47,7 +45,45 @@ const projects = [
     github_link: `${GITHUB}/Contribute-To-This-Project`,
   },
   {
-    key: 'tycho',
+    title: 'GitHub User Search',
+    subtitle: 'An app to search for GitHub users and see public details',
+    image: {
+      src: `${IMAGES}/github-search.PNG`,
+      alt: 'Project screenshot',
+    },
+    highlights: [
+      'Using the GitHub API',
+      'Make an call to fetch info',
+      'Displays details about user and their followers',
+    ],
+    technologies: [
+      'JavaScript',
+      'fetch',
+      'API',
+    ],
+    web_link: `${SYKNAPSE}/GitHub-User-Search-app`,
+    github_link: `${GITHUB}/GitHub-User-Search-app`,
+  },
+  {
+    title: 'Cross the Buggy Road',
+    subtitle: 'A clone of the classic arcade game Frogger',
+    image: {
+      src: `${IMAGES}/arcade.PNG`,
+      alt: 'Project screenshot',
+    },
+    highlights: [
+      'Playable game with 8 levels of difficulty',
+      'Part of Udacity FEND program',
+      'Give it a try, it\'s fun!',
+    ],
+    technologies: [
+      'JavaScript',
+      'OOP',
+    ],
+    web_link: `${SYKNAPSE}/arcade_game_fend`,
+    github_link: `${GITHUB}/arcade_game_fend`,
+  },
+  {
     title: 'Tycho\'s Supernova',
     subtitle: 'Tribute to a star that changed the world',
     image: {
@@ -68,30 +104,26 @@ const projects = [
     github_link: `${GITHUB}/Tychos-Supernova`,
   },
   {
-    key: 'background',
-    title: 'Interactive portfolio',
-    subtitle: 'An interactive page with personal background information',
+    title: 'Neighborhood Map',
+    subtitle: 'Explore places on a neighborhood map',
     image: {
-      src: `${IMAGES}/background.jpg`,
+      src: `${IMAGES}/map.PNG`,
       alt: 'Project screenshot',
     },
     highlights: [
-      'Fully responsive without libraries',
-      'Interactive menu, highlights on select or scroll',
-      'Waypoints that trigger animations and actions on scroll',
-      'Grid design with central "screen" areas that display info on click',
+      'Google and Wikipedia APIs',
+      'Responsive, accessible, service worker cache',
+      'Built with React',
     ],
     technologies: [
-      'HTML5',
-      'CSS3',
-      'jQuery',
-      'CSS grid/flex-box'
+      'React',
+      'Fetch',
+      'API'
     ],
-    web_link: `${SYKNAPSE}/syk-background`,
-    github_link: `${GITHUB}/syk-background`,
+    web_link: ``,
+    github_link: `${GITHUB}/map-react-fend`,
   },
   {
-    key: 'photoGrid',
     title: 'Dynamic Photo Grid',
     subtitle: 'A photo slide-show done with jQuery and CSS grid',
     image: {
@@ -113,7 +145,6 @@ const projects = [
     github_link: `${GITHUB}/Dynamic-Photo-Grid`,
   },
   {
-    key: 'tempConv',
     title: 'Temperature converter',
     subtitle: 'A fully functional, responsive Celsius-Fahrenheit conversion app',
     image: {
@@ -136,7 +167,6 @@ const projects = [
     github_link: `${GITHUB}/Celsius-Fahrenheit-Converter`,
   },
   {
-    key: 'patatap',
     title: 'Patatap clone',
     subtitle: 'A clone of patatap.com, pressing the letters on the keyboard produces sounds and animations',
     image: {
@@ -156,7 +186,6 @@ const projects = [
     github_link: `${GITHUB}/Patatap-Clone`,
   },
   {
-    key: 'rgb-game',
     title: 'RGB Color Guessing Game',
     subtitle: 'Guess the color that corresponds to the RGB code. A fully playable colour guessing game',
     image: {
@@ -175,7 +204,28 @@ const projects = [
     github_link: `${GITHUB}/RGB-Color-Changing-Game`,
   },
   {
-    key: 'responsive-grid',
+    title: 'Interactive portfolio',
+    subtitle: 'An interactive page with personal background information',
+    image: {
+      src: `${IMAGES}/background.jpg`,
+      alt: 'Project screenshot',
+    },
+    highlights: [
+      'Fully responsive without libraries',
+      'Interactive menu, highlights on select or scroll',
+      'Waypoints that trigger animations and actions on scroll',
+      'Grid design with central "screen" areas that display info on click',
+    ],
+    technologies: [
+      'HTML5',
+      'CSS3',
+      'jQuery',
+      'CSS grid/flex-box'
+    ],
+    web_link: `${SYKNAPSE}/syk-background`,
+    github_link: `${GITHUB}/syk-background`,
+  },
+  {
     title: 'Responsive grid',
     subtitle: 'An experiment in using CSS grid to create highly responsive layouts with ease and flexibility',
     image: {
@@ -195,7 +245,6 @@ const projects = [
     github_link: `${GITHUB}/Dynamic-Grid`,
   },
   {
-    key: 'todo',
     title: 'To-do List',
     subtitle: 'A to-do list that allows adding new items, crossing off, and deleting items',
     image: {
@@ -216,7 +265,6 @@ const projects = [
     github_link: `${GITHUB}/To-Do-List`,
   },
   {
-    key: 'clock',
     title: 'Clock',
     subtitle: 'A working javascript clock with CSS design',
     image: {
@@ -235,7 +283,6 @@ const projects = [
     github_link: `${GITHUB}/Clock`,
   },
   {
-    key: 'type-ahead',
     title: 'City/state search',
     subtitle: 'Type-ahead search by US city or state name, see population',
     image: {

@@ -25,6 +25,12 @@ let contactLinks = [
     },
     {
       style: 'contact-links',
+      link: 'https://medium.com/@Syknapse',
+      title: 'My articles on Medium',
+      icon: 'fa-medium'
+    },
+    {
+      style: 'contact-links',
       link: 'https://codepen.io/Syknapse/',
       title: 'CodePen Projects',
       icon: 'fa-codepen'
@@ -40,12 +46,6 @@ let contactLinks = [
       link: 'mailto:syk.houdeib+portfolio@gmail.com',
       title: 'Email me',
       icon: 'fa-envelope-o'
-    },
-    {
-      style: 'contact-links',
-      link: 'https://www.linkedin.com/in/syk-houdeib/',
-      title: 'Linkedin Profile',
-      icon: 'fa-linkedin'
     },
     {
       style: 'contact-links',

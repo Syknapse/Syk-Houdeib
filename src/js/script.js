@@ -79,9 +79,9 @@ $('nav a').on('click', function(){
 
 // project card clicking icon reveals highlights card
 
-$('.plus').click(function(){
-  var descriptionCard = '.description-' + $(this).data('project');
-  $(descriptionCard).toggleClass('swing-away');
+$('.plus').click(function(e){
+  var descriptionCard = $(this).siblings('[data-select="project"]');
+  descriptionCard.toggleClass('swing-away');
   $(this).toggleClass('plus-rotate');
 });
 
