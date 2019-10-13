@@ -75,11 +75,11 @@ nav {
 	height: calc(100vh - 50px);  /*depending on header height*/
 	width: 45vw;
 	max-width: 200px;
-	min-width: 136px;
+	min-width: 172px;
 	background-color: black;
 	color: #7158ff;
-	font-size: 1.8em;
-	letter-spacing: 4px;
+	font-size: 1.7em;
+	letter-spacing: 3px;
 	line-height: 3em;
 	padding-top: 20vh;
 
@@ -560,6 +560,71 @@ h2 {
 
 /* --------------- projects END --------------- */
 
+/* --------------- PUBLICATIONS start --------------- */
+.publication-cards {
+	font-size: 2em;
+	margin: 16px auto;
+	width: 350px;
+	border: 1px solid #999;
+	transition: 0.15s;
+}
+
+.publication-cards:hover {
+	box-shadow: 2px 3px 9px 1px #c1baba;
+}
+
+.publication-card-description {
+	width: 100%;
+	margin: auto;
+}
+
+.publication-image {
+	width: 100%;
+	height: 240px;
+	text-align: center;
+}
+
+.publication-image img {
+	height: 100%;
+}
+
+.publication-card-description h3 {
+	padding: 5px;
+	text-align: left;
+}
+
+.publication-card-description p {
+	padding: 0 5px 5px 5px;
+	text-align: left;
+}
+
+/* ¡¡ ¡¡ Progressive Enhancement ¡¡ ¡¡ */
+@supports (display: flex){
+	.publications-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;  /* fallback Edge */
+		justify-content: space-evenly;
+		max-width: 800px;
+		padding: 0 8px;
+		margin: auto;
+	}
+	.publication-cards {
+		overflow: hidden;
+		margin: 16px 20px;
+	}
+	.publication-card-description {
+		background-color: white;
+		-webkit-transition: 0.5s ease-out;
+		transition: 0.5s ease-out;
+
+	}
+}
+/* ¡¡ Progressive Enhancement END ¡¡ */
+
+
+/* --------------- publications END --------------- */
+
 
 /* --------------- CONTACT start --------------- */
 .contact-links-container {
@@ -610,8 +675,12 @@ footer {
 	@media screen and (min-width: 960px){
 
 		/* full width */
-		.section-title, .title-primary, .title-secondary, .title-tertiary, .home-links-container, .contact-links-container, .projects-container {
+		.section-title, .title-primary, .title-secondary, .title-tertiary, .home-links-container, .contact-links-container, .projects-container, .publications-container {
 			max-width: unset;
+		}
+
+		nav a {
+			margin-left: 2vw;
 		}
 
 		/* skills */
