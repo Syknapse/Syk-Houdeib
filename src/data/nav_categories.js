@@ -16,9 +16,13 @@ let navCategories = [
       icon: 'fa-code'
     },
     {
+      key: 'publications',
+      icon: 'fa-pencil-square-o'
+    },
+    {
       key: 'contact',
       icon: 'fa-paper-plane-o'
     },
 ]
 
-  export default navCategories
+export default navCategories

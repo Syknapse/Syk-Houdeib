@@ -1,10 +1,12 @@
 import navCategories from '../data/nav_categories.js'
 import featuredLinks from '../data/featured_links.js'
 import projects from '../data/projects.js'
+import publications from '../data/publications.js'
 import contactLinks from '../data/contact_links.js'
 import { NavButton } from './components/NavButton.js'
 import { ContactButton } from './components/ContactButton.js'
 import { ProjectCard } from './components/ProjectCard.js'
+import { PublicationCard } from './components/PublicationCard.js'
 
 const sections = [
   {
@@ -24,6 +26,12 @@ const sections = [
     target: '.projects-container',
     data: projects,
     component: ProjectCard,
+  },
+  {
+    name: 'Publications',
+    target: '.publications-container',
+    data: publications,
+    component: PublicationCard,
   },
   {
     name: 'Contact Links',
