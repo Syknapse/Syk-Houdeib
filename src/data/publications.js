@@ -35,7 +35,16 @@ let publications = [
         src: `${IMAGES}/loops.jpg`,
         alt: 'Two pencils with a bright yellow background',
     },
-    web_link: `https://medium.com/free-code-camp/how-i-switched-careers-and-got-a-developer-job-in-10-months-a-true-story-b8895e855a8b`,
+    web_link: `https://www.freecodecamp.org/news/what-in-the-world-is-a-javascript-loop-for/`,
+  },
+  {
+    title: 'What in the world is a JavaScript conditional?',
+    subtitle: "A beginner's introduction to JavaScript conditionals. Covers why we need them, and how they fit into the front-end context. And why you will end up using them regularly.",
+    image: {
+        src: `${IMAGES}/conditionals.jpg`,
+        alt: 'Five cute colourful cactus plants',
+    },
+    web_link: `https://www.freecodecamp.org/news/what-in-the-world-is-a-javascript-conditional-for/`,
   },
 ]
 
