@@ -7,8 +7,8 @@ let contactLinks = [
     },
     {
       style: 'contact-links',
-      link: 'https://www.freecodecamp.org/syknapse',
-      title: 'FreeCodeCamp Profile',
+      link: 'https://www.freecodecamp.org/news/author/syknapse/',
+      title: 'My articles on FreeCodeCamp News',
       icon: 'fa-free-code-camp'
     },
     {

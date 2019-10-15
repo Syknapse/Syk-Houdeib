@@ -48,7 +48,20 @@ function renderElements(params) {
 
 }
 
+// Build all sections
 sections.map( params => renderElements(params) )
+
+// project card clicking reveals highlights card
+const projectCards = document.querySelectorAll('.project-cards')
+projectCards.forEach( card => {
+  card.addEventListener('click', function() {
+    const descriptionCard = this.querySelector('[data-select="project"]')
+    const plus = this.querySelector('.plus')
+
+    descriptionCard.classList.toggle('swing-away');
+    plus.classList.toggle('plus-rotate');
+  })
+})
 
 
 // Legacy
@@ -83,16 +96,6 @@ $('nav a').on('click', function(){
 	// cache $('html, body') for better performance
 	return false
 });
-
-
-// project card clicking icon reveals highlights card
-
-$('.plus').click(function(e){
-  var descriptionCard = $(this).siblings('[data-select="project"]');
-  descriptionCard.toggleClass('swing-away');
-  $(this).toggleClass('plus-rotate');
-});
-
 
 // ********* waypoints *********
 
