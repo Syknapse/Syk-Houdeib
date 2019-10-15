@@ -494,10 +494,10 @@ h2 {
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback Edge */
-		justify-content: space-evenly;
+		justify-content: center;  /* fallback */
+		justify-content: flex-start;
 		max-width: 800px;
-		padding: 0 8px;
+		padding: 0 32px;
 		margin: auto;
 	}
 	.project-cards {
@@ -603,10 +603,10 @@ h2 {
 	.publications-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback Edge */
-		justify-content: space-evenly;
+		justify-content: center;  /* fallback */
+		justify-content: flex-start;
 		max-width: 800px;
-		padding: 0 8px;
+		padding: 0 32px;
 		margin: auto;
 	}
 	.publication-cards {
