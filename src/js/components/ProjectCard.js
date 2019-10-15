@@ -1,8 +1,8 @@
 export function ProjectCard(project) {
 
   let projectTemplate = `<div class="project-cards">
-      <div class="plus" title="Click to reveal project details"><i class="fa fa-plus-square-o fa-fw" aria-hidden="true"></i></div>
-      <div class="project-card-description" data-select="project" >
+      <div class="plus" title="Click to rotate"><i class="fa fa-plus-square-o fa-fw" aria-hidden="true"></i></div>
+      <div class="project-card-description" data-select="project" title="Click to reveal project details">
         <div class="project-image"><img src="${project.image.src}" alt="${project.image.alt}"></div>
         <h3>${project.title}</h3>
         <p>${project.subtitle}</p>

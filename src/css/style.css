@@ -428,13 +428,12 @@ h2 {
 	font-size: 2em;
 	margin: 16px auto;
 	width: 300px;
-	border: 1px solid #999;
+	cursor: pointer;
 }
 
 .plus {
 	font-size: 1.7em;
 	display: none;
-	cursor: pointer;
 }
 
 .project-card-description {
@@ -495,10 +494,10 @@ h2 {
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback Edge */
-		justify-content: space-evenly;
+		justify-content: center;  /* fallback */
+		justify-content: flex-start;
 		max-width: 800px;
-		padding: 0 8px;
+		padding: 0 32px;
 		margin: auto;
 	}
 	.project-cards {
@@ -506,6 +505,9 @@ h2 {
 		height: 350px;
 		overflow: hidden;
 		margin: 16px 20px;
+	}
+	.project-cards:hover {
+		box-shadow: 2px 3px 9px 1px #c1baba;
 	}
 	.project-card-description {
 		position: absolute;
@@ -524,7 +526,6 @@ h2 {
 		top: 0;
 		left: 0;
 		z-index: 1;
-		background-color: #f0f7fa;
 		box-sizing: border-box;
     	padding-bottom: 5px;
 		display: flex;
@@ -565,7 +566,6 @@ h2 {
 	font-size: 2em;
 	margin: 16px auto;
 	width: 350px;
-	border: 1px solid #999;
 	transition: 0.15s;
 }
 
@@ -603,10 +603,10 @@ h2 {
 	.publications-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback Edge */
-		justify-content: space-evenly;
+		justify-content: center;  /* fallback */
+		justify-content: flex-start;
 		max-width: 800px;
-		padding: 0 8px;
+		padding: 0 32px;
 		margin: auto;
 	}
 	.publication-cards {
