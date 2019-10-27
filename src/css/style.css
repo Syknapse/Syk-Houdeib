@@ -467,6 +467,10 @@ h2 {
 	text-align: center;
 }
 
+.project-image img {
+	width: 100%;
+}
+
 .project-card-description h3 {
 	padding-bottom: 5px;
 	text-align: center;
@@ -476,7 +480,6 @@ h2 {
 
 .project-card-description p {
 	padding: 0 5px 5px 5px;
-	text-align: justify;
 }
 
 .project-card-highlights {
@@ -513,9 +516,8 @@ h2 {
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback */
-		justify-content: flex-start;
-		max-width: 800px;
+		justify-content: center;
+		max-width: 1080px;
 		padding: 0 32px;
 		margin: auto;
 	}
@@ -622,9 +624,8 @@ h2 {
 	.publications-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;  /* fallback */
-		justify-content: flex-start;
-		max-width: 800px;
+		justify-content: center;
+		max-width: 1080px;
 		padding: 0 32px;
 		margin: auto;
 	}
@@ -647,19 +648,21 @@ h2 {
 
 /* --------------- CONTACT start --------------- */
 .contact-links-container {
-	text-align: center;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
 	font-size: 3em;
 	width: 100%;
-	max-width: 1200px;  /* compatibility large screen fallback */
-	height: 20vh;
-	margin: 35% auto 15% auto;
+	min-height: 35vh;
+	margin: 15% auto 15% auto;
+	padding: 0 32px;
+    box-sizing: border-box;
 }
 .contact-links {
 	display: inline;
-	padding: 1vw;
-	margin: 2vw;
-	line-height: 10vh;
-	border-radius: 50%;
+	margin: 40px;
 	-webkit-transition: 0.5s ease;
 	transition: 0.5s ease;
 }
@@ -694,7 +697,7 @@ footer {
 	@media screen and (min-width: 960px){
 
 		/* full width */
-		.section-title, .title-primary, .title-secondary, .title-tertiary, .home-links-container, .contact-links-container, .projects-container, .publications-container {
+		.section-title, .title-primary, .title-secondary, .title-tertiary, .home-links-container {
 			max-width: unset;
 		}
 

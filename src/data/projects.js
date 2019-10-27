@@ -203,7 +203,7 @@ const projects = [
     web_link: `${SYKNAPSE}/RGB-Color-Changing-Game`,
     github_link: `${GITHUB}/RGB-Color-Changing-Game`,
   },
-  {
+  /* {
     title: 'Interactive portfolio',
     subtitle: 'An interactive page with personal background information',
     image: {
@@ -224,7 +224,7 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/syk-background`,
     github_link: `${GITHUB}/syk-background`,
-  },
+  }, */
   {
     title: 'Responsive grid',
     subtitle: 'An experiment in using CSS grid to create highly responsive layouts with ease and flexibility',
