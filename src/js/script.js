@@ -1,10 +1,12 @@
 import navCategories from '../data/nav_categories.js'
 import featuredLinks from '../data/featured_links.js'
+import skills from '../data/skills.js'
 import projects from '../data/projects.js'
 import publications from '../data/publications.js'
 import contactLinks from '../data/contact_links.js'
 import { NavButton } from './components/NavButton.js'
 import { ContactButton } from './components/ContactButton.js'
+import { SkillCard } from './components/SkillCard.js'
 import { ProjectCard } from './components/ProjectCard.js'
 import { PublicationCard } from './components/PublicationCard.js'
 
@@ -20,6 +22,12 @@ const sections = [
     target: '.home-links-container',
     data: featuredLinks,
     component: ContactButton,
+  },
+  {
+    name: 'Skills & Experience',
+    target: '.skill-cards-container',
+    data: skills,
+    component: SkillCard,
   },
   {
     name: 'Projects',
