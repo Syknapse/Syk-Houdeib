@@ -46,6 +46,15 @@ let publications = [
     },
     web_link: `https://www.freecodecamp.org/news/what-in-the-world-is-a-javascript-conditional-for/`,
   },
+  {
+    title: 'The three essential programming concepts for front ends',
+    subtitle: "A beginner introduction to arrays, loops, and conditionals. Why we need them and how they all fit together in a front-end context. It’s a bird’s eye view of organising data, accessing it, and doing things to it. Covering fundamental every-day concepts for a front-end developer.",
+    image: {
+        src: `${IMAGES}/three-concepts.jpg`,
+        alt: 'Rustic colouring pencils',
+    },
+    web_link: `https://medium.com/@Syknapse/the-three-essential-programming-concepts-for-front-ends-3720e6f28f98`,
+  },
 ]
 
 export default publications
