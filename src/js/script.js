@@ -71,6 +71,48 @@ projectCards.forEach( card => {
   })
 })
 
+// Github stars and forks
+
+const getTotal = (array, item) => array.reduce((acc, cur) => {
+  return acc + cur[item]
+}, 0)
+
+const insertGitHubData = (starred, forked) => {
+  document.getElementById('github-stars').innerText = starred
+  document.getElementById('github-forks').innerText = forked
+}
+
+const getGitHubData = () => {
+  // TODO add pagination
+  fetch('https://api.github.com/users/Syknapse/repos?per_page=100')
+    .then(response => response.json())
+    .then(data => {
+      const starred = getTotal(data, 'stargazers_count')
+      const forked = getTotal(data, 'forks_count')
+      insertGitHubData(starred, forked)
+    })
+}
+
+getGitHubData()
+
+// TODO install Babel so we can use async
+/* const getGitHubData = async () => {
+  // TODO add pagination
+  let response = await fetch('https://api.github.com/users/Syknapse/repos?per_page=100')
+     return await response.json()
+}
+
+const displayGitHubData = () => {
+  getGitHubData().then(data => {
+    const starred = getTotal(data, 'stargazers_count')
+    const forked = getTotal(data, 'forks_count')
+    insertGitHubData(starred, forked)
+  }).catch(e => console.log(e))
+
+}
+
+displayGitHubData() */
+
 
 // Legacy
 
