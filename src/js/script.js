@@ -1,10 +1,12 @@
 import navCategories from '../data/nav_categories.js'
+import gitHubData from '../data/gitHub_data.js'
 import featuredLinks from '../data/featured_links.js'
 import skills from '../data/skills.js'
 import projects from '../data/projects.js'
 import publications from '../data/publications.js'
 import contactLinks from '../data/contact_links.js'
 import { NavButton } from './components/NavButton.js'
+import { GitHubCounter } from './components/GitHubCounter.js'
 import { ContactButton } from './components/ContactButton.js'
 import { SkillCard } from './components/SkillCard.js'
 import { ProjectCard } from './components/ProjectCard.js'
@@ -16,6 +18,12 @@ const sections = [
     target: 'nav',
     data: navCategories,
     component: NavButton,
+  },
+  {
+    name: 'GitHub Counters',
+    target: '.github-data',
+    data: gitHubData,
+    component: GitHubCounter,
   },
   {
     name: 'Featured Links',
