@@ -261,14 +261,14 @@ h2 {
 .blurb {
 	text-align: center;
 	font-size: 3em;
-	margin: 5vh 3vw 16px 3vw;
+	margin: 5vh 3vw 10vh 3vw;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
 
 .blurb p {
-		max-width: 800px;
-		margin: auto;
+	max-width: 800px;
+	margin: auto;
 }
 
 .blurb #handle {
@@ -284,9 +284,9 @@ h2 {
 .github-data {
 	display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 1.5em;
-    margin: 0 36vw 10vh 36vw;
+    margin-top: 16px;
 }
 
 .data-containers {
@@ -296,7 +296,7 @@ h2 {
 	font-weight: bold;
     letter-spacing: 0.03em;
 	line-height: 1.4;
-	margin: 0 16px;
+	margin: 0 8px;
 }
 
 .github-data .icon {
