@@ -4,6 +4,25 @@ const IMAGES = `assets/images`
 
 const projects = [
   {
+    title: 'Tezia',
+    subtitle: 'JS meets minimalism. Music and colour experiments',
+    image: {
+      src: `${IMAGES}/tezia.png`,
+      alt: 'Screenshot of Tezia',
+    },
+    highlights: [
+      'A generative music project that creates melodies.',
+      'Different modes, each with different algorithms',
+      'Self-initiated project',
+    ],
+    technologies: [
+      'Javascript',
+      'OOP',
+    ],
+    web_link: `${SYKNAPSE}/tezia`,
+    github_link: `${GITHUB}/tezia`,
+  },
+  {
     title: 'Pixel Art Maker',
     subtitle: 'A web app to draw pixelated art',
     image: {
@@ -43,25 +62,6 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/Contribute-To-This-Project`,
     github_link: `${GITHUB}/Contribute-To-This-Project`,
-  },
-  {
-    title: 'Tezia',
-    subtitle: 'JS meets minimalism. Music and colour experiments',
-    image: {
-      src: `${IMAGES}/tezia.png`,
-      alt: 'Screenshot of Tezia',
-    },
-    highlights: [
-      'A generative music project that creates melodies.',
-      'Different modes, each with different algorithms',
-      'Self-initiated project',
-    ],
-    technologies: [
-      'Javascript',
-      'OOP',
-    ],
-    web_link: `${SYKNAPSE}/tezia`,
-    github_link: `${GITHUB}/tezia`,
   },
   {
     title: 'GitHub User Search',
