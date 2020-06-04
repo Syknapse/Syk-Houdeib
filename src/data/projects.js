@@ -45,6 +45,25 @@ const projects = [
     github_link: `${GITHUB}/Contribute-To-This-Project`,
   },
   {
+    title: 'Tezia',
+    subtitle: 'JS meets minimalism. Music and colour experiments',
+    image: {
+      src: `${IMAGES}/tezia.PNG`,
+      alt: 'Screenshot of Tezia',
+    },
+    highlights: [
+      'A generative music project that creates melodies.',
+      'Different modes, each with different algorithms',
+      'Self-initiated project',
+    ],
+    technologies: [
+      'Javascript',
+      'OOP',
+    ],
+    web_link: `${SYKNAPSE}/tezia`,
+    github_link: `${GITHUB}/tezia`,
+  },
+  {
     title: 'GitHub User Search',
     subtitle: 'An app to search for GitHub users and see public details',
     image: {

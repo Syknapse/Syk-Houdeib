@@ -505,9 +505,9 @@ h2 {
 }
 
 .project-card-highlights ul {
-	padding-left: 30px;
 	text-align: left;
 	font-weight: 300;
+	padding: 0 16px;
 }
 
 .project-card-highlights p {
