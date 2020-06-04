@@ -48,7 +48,7 @@ const projects = [
     title: 'Tezia',
     subtitle: 'JS meets minimalism. Music and colour experiments',
     image: {
-      src: `${IMAGES}/tezia.PNG`,
+      src: `${IMAGES}/tezia.png`,
       alt: 'Screenshot of Tezia',
     },
     highlights: [
