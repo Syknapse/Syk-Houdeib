@@ -1,148 +1,123 @@
-const GITHUB = `https://github.com/Syknapse`
-const SYKNAPSE = `https://syknapse.github.io`
-const IMAGES = `assets/images`
+const GITHUB = `https://github.com/Syknapse`;
+const SYKNAPSE = `https://syknapse.github.io`;
+const IMAGES = `assets/images`;
 
 const projects = [
   {
-    title: 'Tezia',
-    subtitle: 'JS meets minimalism. Music and colour experiments',
+    title: "Tezia",
+    subtitle: "JS meets minimalism. Music and colour experiments",
     image: {
       src: `${IMAGES}/tezia.png`,
-      alt: 'Screenshot of Tezia',
+      alt: "Screenshot of Tezia",
     },
     highlights: [
-      'A generative music project that creates melodies.',
-      'Different modes, each with different algorithms',
-      'Self-initiated project',
+      "A generative music project that creates melodies.",
+      "Different modes, each with different algorithms",
+      "Self-initiated project",
     ],
-    technologies: [
-      'Javascript',
-      'OOP',
-    ],
+    technologies: ["Javascript", "OOP"],
     web_link: `${SYKNAPSE}/tezia`,
     github_link: `${GITHUB}/tezia`,
   },
   {
-    title: 'Pixel Art Maker',
-    subtitle: 'A web app to draw pixelated art',
+    title: "Pixel Art Maker",
+    subtitle: "A web app to draw pixelated art",
     image: {
       src: `${IMAGES}/pixel.PNG`,
-      alt: 'Screenshot of Pixel Art Maker',
+      alt: "Screenshot of Pixel Art Maker",
     },
     highlights: [
-      'Intuitive and simple to use',
-      'Dynamically create grid',
-      'Draw/erase by click or click and drag',
-      'Final project for the Udacity Google Challenge scholarship',
+      "Intuitive and simple to use",
+      "Dynamically create grid",
+      "Draw/erase by click or click and drag",
+      "Final project for the Udacity Google Challenge scholarship",
     ],
-    technologies: [
-      'Javascript',
-      'jQuery',
-      'CSS'
-    ],
+    technologies: ["Javascript", "jQuery", "CSS"],
     web_link: `${SYKNAPSE}/Pixel-art-maker`,
     github_link: `${GITHUB}/Pixel-art-maker`,
   },
   {
-    title: 'Contribute To This Project',
-    subtitle: 'A tutorial to help first-timers make their first open source contribution on GitHub',
+    title: "Contribute To This Project",
+    subtitle:
+      "A tutorial to help first-timers make their first open source contribution on GitHub",
     image: {
       src: `${IMAGES}/contribute.PNG`,
-      alt: 'Screenshot of Contribute to this Project',
+      alt: "Screenshot of Contribute to this Project",
     },
     highlights: [
-      'A self-initiated project to help fellow learners',
-      'A Readme with a detailed step-by-step tutorial',
-      'A live page where contributors see their contribution',
+      "A self-initiated project to help fellow learners",
+      "A Readme with a detailed step-by-step tutorial",
+      "A live page where contributors see their contribution",
     ],
-    technologies: [
-      'GitHub',
-      'Markdown',
-      'PR management'
-    ],
+    technologies: ["GitHub", "Markdown", "PR management"],
     web_link: `${SYKNAPSE}/Contribute-To-This-Project`,
     github_link: `${GITHUB}/Contribute-To-This-Project`,
   },
   {
-    title: 'GitHub User Search',
-    subtitle: 'An app to search for GitHub users and see public details',
+    title: "GitHub User Search",
+    subtitle: "An app to search for GitHub users and see public details",
     image: {
       src: `${IMAGES}/github-search.PNG`,
-      alt: 'Project screenshot',
+      alt: "Project screenshot",
     },
     highlights: [
-      'Using the GitHub API',
-      'Make an call to fetch info',
-      'Displays details about user and their followers',
+      "Using the GitHub API",
+      "Make an call to fetch info",
+      "Displays details about user and their followers",
     ],
-    technologies: [
-      'JavaScript',
-      'fetch',
-      'API',
-    ],
+    technologies: ["JavaScript", "fetch", "API"],
     web_link: `${SYKNAPSE}/GitHub-User-Search-app`,
     github_link: `${GITHUB}/GitHub-User-Search-app`,
   },
   {
-    title: 'Cross the Buggy Road',
-    subtitle: 'A clone of the classic arcade game Frogger',
+    title: "Cross the Buggy Road",
+    subtitle: "A clone of the classic arcade game Frogger",
     image: {
       src: `${IMAGES}/arcade.PNG`,
-      alt: 'Project screenshot',
+      alt: "Project screenshot",
     },
     highlights: [
-      'Playable game with 8 levels of difficulty',
-      'Part of Udacity FEND program',
-      'Give it a try, it\'s fun!',
+      "Playable game with 8 levels of difficulty",
+      "Part of Udacity FEND program",
+      "Give it a try, it's fun!",
     ],
-    technologies: [
-      'JavaScript',
-      'OOP',
-    ],
+    technologies: ["JavaScript", "OOP"],
     web_link: `${SYKNAPSE}/arcade_game_fend`,
     github_link: `${GITHUB}/arcade_game_fend`,
   },
   {
-    title: 'Tycho\'s Supernova',
-    subtitle: 'Tribute to a star that changed the world',
+    title: "Tycho's Supernova",
+    subtitle: "Tribute to a star that changed the world",
     image: {
       src: `${IMAGES}/tycho.jpg`,
-      alt: 'Screenshot of Tycho\'s Supernova',
+      alt: "Screenshot of Tycho's Supernova",
     },
     highlights: [
-      'Parallax effect',
-      'Visual effects to aid the narrative',
-      'An alternative mobile version',
+      "Parallax effect",
+      "Visual effects to aid the narrative",
+      "An alternative mobile version",
     ],
-    technologies: [
-      'HTML',
-      'CSS',
-      'parallax'
-    ],
+    technologies: ["HTML", "CSS", "parallax"],
     web_link: `${SYKNAPSE}/Tychos-Supernova`,
     github_link: `${GITHUB}/Tychos-Supernova`,
   },
   {
-    title: 'Neighborhood Map',
-    subtitle: 'Explore places on a neighborhood map',
+    title: "Neighborhood Map",
+    subtitle: "Explore places on a neighborhood map",
     image: {
       src: `${IMAGES}/map.PNG`,
-      alt: 'Project screenshot',
+      alt: "Project screenshot",
     },
     highlights: [
-      'Google and Wikipedia APIs',
-      'Responsive, accessible, service worker cache',
-      'Built with React',
+      "Google and Wikipedia APIs",
+      "Responsive, accessible, service worker cache",
+      "Built with React",
     ],
-    technologies: [
-      'React',
-      'Fetch',
-      'API'
-    ],
+    technologies: ["React", "Fetch", "API"],
     web_link: ``,
     github_link: `${GITHUB}/map-react-fend`,
   },
-  {
+  /* {
     title: 'Dynamic Photo Grid',
     subtitle: 'A photo slide-show done with jQuery and CSS grid',
     image: {
@@ -162,63 +137,58 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/Dynamic-Photo-Grid`,
     github_link: `${GITHUB}/Dynamic-Photo-Grid`,
-  },
+  }, */
   {
-    title: 'Temperature converter',
-    subtitle: 'A fully functional, responsive Celsius-Fahrenheit conversion app',
+    title: "Temperature converter",
+    subtitle:
+      "A fully functional, responsive Celsius-Fahrenheit conversion app",
     image: {
       src: `${IMAGES}/tempConv.jpg`,
-      alt: 'Screenshot of temperature converter',
+      alt: "Screenshot of temperature converter",
     },
     highlights: [
-      'Self-initiated and self-directed project',
-      'Background image changes depending on the temperature',
-      'Javascript logic converts to a single decimal, and limits input',
-      'A reset button',
-      'Responsive to any device size'
+      "Self-initiated and self-directed project",
+      "Background image changes depending on the temperature",
+      "Javascript logic converts to a single decimal, and limits input",
+      "A reset button",
+      "Responsive to any device size",
     ],
-    technologies: [
-      'CSS',
-      'jQuery',
-      'JavaScript'
-    ],
+    technologies: ["CSS", "jQuery", "JavaScript"],
     web_link: `${SYKNAPSE}/Celsius-Fahrenheit-Converter`,
     github_link: `${GITHUB}/Celsius-Fahrenheit-Converter`,
   },
   {
-    title: 'Patatap clone',
-    subtitle: 'A clone of patatap.com, pressing the letters on the keyboard produces sounds and animations',
+    title: "Patatap clone",
+    subtitle:
+      "A clone of patatap.com, pressing the letters on the keyboard produces sounds and animations",
     image: {
       src: `${IMAGES}/patatap.jpg`,
-      alt: 'Screenshot of Patatap project',
+      alt: "Screenshot of Patatap project",
     },
     highlights: [
-      'Vanilla JS logic',
-      'Uses Peper.js &amp; Howler.js',
-      'Color changing circles and a sound for each keyboard letter',
-      'Animated circles appear at a random location on the visible screen<',
+      "Vanilla JS logic",
+      "Uses Peper.js &amp; Howler.js",
+      "Color changing circles and a sound for each keyboard letter",
+      "Animated circles appear at a random location on the visible screen<",
     ],
-    technologies: [
-      'Javascript'
-    ],
+    technologies: ["Javascript"],
     web_link: `${SYKNAPSE}/Patatap-Clone`,
     github_link: `${GITHUB}/Patatap-Clone`,
   },
   {
-    title: 'RGB Color Guessing Game',
-    subtitle: 'Guess the color that corresponds to the RGB code. A fully playable colour guessing game',
+    title: "RGB Color Guessing Game",
+    subtitle:
+      "Guess the color that corresponds to the RGB code. A fully playable colour guessing game",
     image: {
       src: `${IMAGES}/rgb.jpg`,
-      alt: 'Screenshot of RGB game',
+      alt: "Screenshot of RGB game",
     },
     highlights: [
-      'Vanilla js logic: randomly select an RGB code, generate random colors to choose from, recognise correct answer and change colors',
-      'Easy and hard modes',
-      'Reset and change colors options',
+      "Vanilla js logic: randomly select an RGB code, generate random colors to choose from, recognise correct answer and change colors",
+      "Easy and hard modes",
+      "Reset and change colors options",
     ],
-    technologies: [
-      'Javascript'
-    ],
+    technologies: ["Javascript"],
     web_link: `${SYKNAPSE}/RGB-Color-Changing-Game`,
     github_link: `${GITHUB}/RGB-Color-Changing-Game`,
   },
@@ -244,7 +214,7 @@ const projects = [
     web_link: `${SYKNAPSE}/syk-background`,
     github_link: `${GITHUB}/syk-background`,
   }, */
-  {
+  /* {
     title: 'Responsive grid',
     subtitle: 'An experiment in using CSS grid to create highly responsive layouts with ease and flexibility',
     image: {
@@ -262,8 +232,8 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/Dynamic-Grid`,
     github_link: `${GITHUB}/Dynamic-Grid`,
-  },
-  {
+  }, */
+  /* {
     title: 'To-do List',
     subtitle: 'A to-do list that allows adding new items, crossing off, and deleting items',
     image: {
@@ -282,8 +252,8 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/To-Do-List`,
     github_link: `${GITHUB}/To-Do-List`,
-  },
-  {
+  }, */
+  /* {
     title: 'Clock',
     subtitle: 'A working javascript clock with CSS design',
     image: {
@@ -300,8 +270,8 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/Clock`,
     github_link: `${GITHUB}/Clock`,
-  },
-  {
+  }, */
+  /* {
     title: 'City/state search',
     subtitle: 'Type-ahead search by US city or state name, see population',
     image: {
@@ -320,7 +290,7 @@ const projects = [
     ],
     web_link: `${SYKNAPSE}/Ajax-Type-Ahead`,
     github_link: `${GITHUB}/Ajax-Type-Ahead`,
-  },
-]
+  }, */
+];
 
-export default projects
+export default projects;
