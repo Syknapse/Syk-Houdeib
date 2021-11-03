@@ -9,11 +9,11 @@ const skills = [
             },
             {
                 title: 'Working with:',
-                text: 'Backbone, Wintersmith, React, Redux, Gulp, Webpack, Git, Agile.',
+                text: 'React, Redux, Next.js, Sagas, Git, Storybook, MJML.',
             },
             {
                 title: 'Highlights:',
-                text: 'Full internationalisation of the platform. Migrating Backbone legacy code to React. Making the entire site responsive.',
+                text: 'Company aquired by Glovo in October 2021. SSR and SEO. Theming for white label. Full internationalisation of the platform. Full migration from Backbone legacy code to React + Redux. Making the entire site responsive.',
             },
         ],
         additional: 'April 2017 - current'
