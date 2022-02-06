@@ -16,7 +16,7 @@ const skills = [
                 text: 'Company aquired by Glovo in October 2021. SSR and SEO. Theming for white label. Full internationalisation of the platform. Full migration from Backbone legacy code to React + Redux. Making the entire site responsive.',
             },
         ],
-        additional: 'April 2017 - current'
+        additional: 'April 2018 - current'
     },
     {
         title: 'Nanodegree Front End Web Developer',
