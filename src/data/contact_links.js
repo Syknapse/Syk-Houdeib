@@ -55,7 +55,7 @@ let contactLinks = [
   },
   {
     style: "contact-links",
-    link: "assets/sykHoudeibCV.pdf",
+    link: "assets/Syk_Houdeib_2022.pdf",
     title: "Print or Download my PDF CV",
     icon: "fa-file-pdf-o",
   },
