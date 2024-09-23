@@ -1,5 +1,4 @@
 export function ProjectCard(project) {
-
   let projectTemplate = `<div class="project-cards">
       <div class="plus" title="Click to rotate"><i class="fa fa-plus-square-o fa-fw" aria-hidden="true"></i></div>
       <div class="project-card-description" data-select="project" title="Click to reveal project details">
@@ -10,12 +9,16 @@ export function ProjectCard(project) {
       <div class="project-card-highlights">
         <h4>Highlights</h4>
         <ul>
-          ${project.highlights.map( highlight => `<li>${highlight}</li>` ).join('')}
+          ${project.highlights.map((highlight) => `<li>${highlight}</li>`).join("")}
         </ul>
-        <p><strong>${project.technologies.map( technology => `${technology}` ).join(' ')}</strong></p>
+        <p><strong>${project.technologies.map((technology) => `${technology}`).join(" ")}</strong></p>
         <div>
-          <a href="${project.web_link}" target="_blank" title="View project site"><i class="fa fa-eye fa-fw" aria-hidden="true"></i></a>
-          <a href="${project.github_link}" target="_blank" title="View on GitHub"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
+          <a href="${
+            project.web_link
+          }" target="_blank" title="View project site"><i class="fa fa-eye fa-fw" aria-hidden="true"></i></a>
+          <a href="${
+            project.github_link
+          }" target="_blank" title="View on GitHub"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>`

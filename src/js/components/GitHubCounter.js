@@ -1,6 +1,5 @@
 export function GitHubCounter(data) {
-
-    let counterTemplate = `
+  let counterTemplate = `
         <div class="data-containers" title="${data.title}">
             <div class="icon">
                 ${data.svg}
@@ -10,5 +9,5 @@ export function GitHubCounter(data) {
         </div>
     `
 
-    return counterTemplate
+  return counterTemplate
 }
