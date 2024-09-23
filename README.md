@@ -1,5 +1,5 @@
 <a href="https://syknapse.github.io/Syk-Houdeib"><h1>Syk Houdeib</h1></a>
-<a href="https://syknapse.github.io/Syk-Houdeib"><h2>Front-End Developer Portfolio</h2></a>
+<a href="https://syknapse.github.io/Syk-Houdeib"><h2>Frontend Developer Portfolio</h2></a>
 
 <p>A project to build a personal portfolio page from scratch following progressive enhancement and mobile-first principles. 
 <br>The basic single-column layout was designed with maximum compatibility in mind. Then using multiple techniques (using the CSS cascade, @media queries and @supports queries) the site is progressively enhanced for a better and more appealing experience for users with more modern browsers and larger screens.</p>

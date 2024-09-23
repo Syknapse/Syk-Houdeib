@@ -1,6 +1,6 @@
-const GITHUB = `https://github.com/Syknapse`;
-const SYKNAPSE = `https://syknapse.github.io`;
-const IMAGES = `assets/images`;
+const GITHUB = `https://github.com/Syknapse`
+const SYKNAPSE = `https://syknapse.github.io`
+const IMAGES = `assets/images`
 
 const projects = [
   {
@@ -38,8 +38,7 @@ const projects = [
   },
   {
     title: "Contribute To This Project",
-    subtitle:
-      "A tutorial to help first-timers make their first open source contribution on GitHub",
+    subtitle: "A tutorial to help first-timers make their first open source contribution on GitHub",
     image: {
       src: `${IMAGES}/contribute.PNG`,
       alt: "Screenshot of Contribute to this Project",
@@ -92,11 +91,7 @@ const projects = [
       src: `${IMAGES}/tycho.jpg`,
       alt: "Screenshot of Tycho's Supernova",
     },
-    highlights: [
-      "Parallax effect",
-      "Visual effects to aid the narrative",
-      "An alternative mobile version",
-    ],
+    highlights: ["Parallax effect", "Visual effects to aid the narrative", "An alternative mobile version"],
     technologies: ["HTML", "CSS", "parallax"],
     web_link: `${SYKNAPSE}/Tychos-Supernova`,
     github_link: `${GITHUB}/Tychos-Supernova`,
@@ -108,11 +103,7 @@ const projects = [
       src: `${IMAGES}/map.PNG`,
       alt: "Project screenshot",
     },
-    highlights: [
-      "Google and Wikipedia APIs",
-      "Responsive, accessible, service worker cache",
-      "Built with React",
-    ],
+    highlights: ["Google and Wikipedia APIs", "Responsive, accessible, service worker cache", "Built with React"],
     technologies: ["React", "Fetch", "API"],
     web_link: ``,
     github_link: `${GITHUB}/map-react-fend`,
@@ -140,8 +131,7 @@ const projects = [
   }, */
   {
     title: "Temperature converter",
-    subtitle:
-      "A fully functional, responsive Celsius-Fahrenheit conversion app",
+    subtitle: "A fully functional, responsive Celsius-Fahrenheit conversion app",
     image: {
       src: `${IMAGES}/tempConv.jpg`,
       alt: "Screenshot of temperature converter",
@@ -159,8 +149,7 @@ const projects = [
   },
   {
     title: "Patatap clone",
-    subtitle:
-      "A clone of patatap.com, pressing the letters on the keyboard produces sounds and animations",
+    subtitle: "A clone of patatap.com, pressing the letters on the keyboard produces sounds and animations",
     image: {
       src: `${IMAGES}/patatap.jpg`,
       alt: "Screenshot of Patatap project",
@@ -177,8 +166,7 @@ const projects = [
   },
   {
     title: "RGB Color Guessing Game",
-    subtitle:
-      "Guess the color that corresponds to the RGB code. A fully playable colour guessing game",
+    subtitle: "Guess the color that corresponds to the RGB code. A fully playable colour guessing game",
     image: {
       src: `${IMAGES}/rgb.jpg`,
       alt: "Screenshot of RGB game",
@@ -291,6 +279,6 @@ const projects = [
     web_link: `${SYKNAPSE}/Ajax-Type-Ahead`,
     github_link: `${GITHUB}/Ajax-Type-Ahead`,
   }, */
-];
+]
 
-export default projects;
+export default projects

@@ -23,6 +23,6 @@ let featuredLinks = [
     title: "Read my articles on my blog",
     icon: "fa-pencil-square-o",
   },
-];
+]
 
-export default featuredLinks;
+export default featuredLinks

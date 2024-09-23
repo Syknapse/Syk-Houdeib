@@ -59,6 +59,6 @@ let contactLinks = [
     title: "Print or Download my PDF CV",
     icon: "fa-file-pdf-o",
   },
-];
+]
 
-export default contactLinks;
+export default contactLinks

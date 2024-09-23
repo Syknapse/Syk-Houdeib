@@ -1,6 +1,5 @@
 export function PublicationCard(publication) {
-
-    let publicationTemplate = `
+  let publicationTemplate = `
         <div class="publication-cards">
             <a href="${publication.web_link}" target="_blank">
                 <div class="publication-card-description" data-select="publication" >
@@ -11,5 +10,5 @@ export function PublicationCard(publication) {
             </a>
         </div>`
 
-    return publicationTemplate
-  }
+  return publicationTemplate
+}
