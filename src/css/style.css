@@ -757,9 +757,7 @@ footer {
   }
   /* #nav-btn */
   header span {
-    transform: translateX(400%);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    display: none;
   }
 
   /* home */
