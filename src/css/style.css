@@ -654,25 +654,35 @@ h2 {
 .contact-links-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   max-width: 700px;
   font-size: 3em;
   width: 100%;
   min-height: 35vh;
   margin: 15% auto 15% auto;
-  padding: 0 32px;
+  padding: 0 15%;
   box-sizing: border-box;
+  flex-direction: column;
 }
 .contact-links {
   display: inline;
-  margin: 40px;
+  margin: 24px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
+.contact-links a {
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+
 .contact-links:hover {
   color: #7158ff;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  margin-left: 8px;
 }
 
 /* --------------- contact END --------------- */
@@ -703,7 +713,10 @@ footer {
     .title-primary,
     .title-secondary,
     .title-tertiary,
-    .home-links-container {
+    .home-links-container,
+    .projects-container,
+    .publications-container,
+    .contact-links-container {
       max-width: unset;
     }
 
@@ -714,6 +727,12 @@ footer {
     .skill-cards .skill-card-highlight {
       font-size: 1.7em;
     }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .contact-links-container {
+    max-height: 500px;
   }
 }
 
