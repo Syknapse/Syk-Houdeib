@@ -1,5 +1,24 @@
 const skills = [
   {
+    title: "Software Engineer II",
+    subtitle: "Glovo - Madrid (remote)",
+    highlights: [
+      {
+        title: "Responsibilities:",
+        text: "Develop a brand new back-office SaaS solution from scratch to manage the grocery delivery operations. Mentoring junior members. Leading initiatives and team organisation.",
+      },
+      {
+        title: "Working with:",
+        text: "React, TypeScript, Next.js, Jest, React Testing Library, Auth0, Git, KrakenD, Material UI, Google Maps, React Context, GitHub, GitHub CI/CD, Yarn, Lokalise, i18next, Emotion, Node, DayJS, ESLint, React Hook Form, Prettier.",
+      },
+      {
+        title: "Highlights:",
+        text: "Building a new product from scratch. Delivering the MVP within a very tight time frame. Full documentation. Implementing Auth0 access for roles and permissions. Mentoring and leadership",
+      },
+    ],
+    additional: "September 2021 - September 2024",
+  },
+  {
     title: "Frontend Developer",
     subtitle: "Lola Market - Madrid",
     highlights: [
@@ -9,14 +28,14 @@ const skills = [
       },
       {
         title: "Working with:",
-        text: "React, Redux, Next.js, Sagas, Git, Storybook, MJML.",
+        text: "React, Next.js, Redux, Immutable, Saga, Yarn, Algolia Search, StoryBook, MJML, Backbone, jQuery, Bitbucket.",
       },
       {
         title: "Highlights:",
         text: "Company acquired by Glovo in October 2021. SSR and SEO. Theming for white label. Full internationalisation of the platform. Full migration from Backbone legacy code to React + Redux. Making the entire site responsive.",
       },
     ],
-    additional: "April 2018 - current",
+    additional: "April 2018 - September 2021",
   },
   {
     title: "Nanodegree Front End Web Developer",
