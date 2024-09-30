@@ -658,7 +658,7 @@ h2 {
   font-size: 3em;
   width: 100%;
   min-height: 35vh;
-  margin: 15% auto 15% auto;
+  margin: 0 auto 200px auto;
   padding: 0 15%;
   box-sizing: border-box;
   flex-direction: column;
