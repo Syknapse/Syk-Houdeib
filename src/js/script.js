@@ -121,7 +121,17 @@ const displayGitHubData = () => {
 
 displayGitHubData() */
 
-// Legacy
+// Set years of experience
+const setExperienceYears = () => {
+  const startYear = 2018
+  const currentYear = new Date().getFullYear()
+  const experienceYears = currentYear - startYear
+  document.getElementById("experience-years").textContent = experienceYears
+}
+
+setExperienceYears()
+
+// Legacy //
 
 $(document).ready()
 

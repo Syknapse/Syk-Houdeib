@@ -444,8 +444,8 @@ h2 {
   z-index: -1;
 }
 
-.text-box a:hover {
-  box-shadow: 1px -2px 9px 1px rgb(193 186 186 / 37%);
+.text-box a {
+  text-decoration: black underline solid auto;
 }
 /* ----- box style end----- */
 
