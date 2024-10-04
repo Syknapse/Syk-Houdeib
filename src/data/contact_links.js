@@ -64,15 +64,8 @@ let contactLinks = [
   },
   {
     style: "contact-links",
-    link: "assets/Syk_Houdeib.pdf",
-    title: "My PDF CV (one page)",
-    icon: "fa-file-pdf-o",
-    showTitle: true,
-  },
-  {
-    style: "contact-links",
-    link: "assets/Syk_Houdeib_lng.pdf",
-    title: "My PDF CV (detailed)",
+    link: "assets/Syk_Houdeib_Frontend_CV.pdf",
+    title: "My PDF CV",
     icon: "fa-file-pdf-o",
     showTitle: true,
   },
