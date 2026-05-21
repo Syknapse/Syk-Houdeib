@@ -30,7 +30,7 @@ let contactLinks = [
   {
     style: "contact-links",
     link: "https://www.blog.sykhoudeib.com/",
-    title: "Read my articles on my blog",
+    title: "Read my blog",
     icon: "fa-pencil-square-o",
     showTitle: true,
   },

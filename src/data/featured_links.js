@@ -20,7 +20,7 @@ let featuredLinks = [
   {
     style: "home-links",
     link: "https://www.blog.sykhoudeib.com/",
-    title: "Read my articles on my blog",
+    title: "Read my blog",
     icon: "fa-pencil-square-o",
   },
 ]

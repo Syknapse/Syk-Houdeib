@@ -97,11 +97,16 @@ const getGitHubData = () => {
     .then((data) => {
       const starred = getTotal(data, "stargazers_count")
       const forked = getTotal(data, "forks_count")
+      setStarsText(starred)
       insertGitHubData(starred, forked)
     })
 }
 
 getGitHubData()
+
+const setStarsText = (starred) => {
+  document.getElementById("stars-text").textContent = starred
+}
 
 // TODO install Babel so we can use async
 /* const getGitHubData = async () => {
@@ -161,7 +166,7 @@ $("nav a").on("click", function () {
     function () {
       // add #anchor name to the url
       window.location.hash = anchorName
-    }
+    },
   )
   // cache $('html, body') for better performance
   return false
@@ -190,7 +195,7 @@ $("section").waypoint(
   },
   {
     offset: "20%",
-  }
+  },
 )
 
 $("section").waypoint(
@@ -205,5 +210,5 @@ $("section").waypoint(
     offset: function () {
       return this.element.offsetHeight / -2
     },
-  }
+  },
 )

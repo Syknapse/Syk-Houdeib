@@ -1,5 +1,24 @@
 const skills = [
   {
+    title: "Senior Frontend Engineer",
+    subtitle: "Xebia - Madrid (remote)",
+    highlights: [
+      {
+        title: "Responsibilities:",
+        text: "Led the frontend architecture of a greenfield multi-tenant agentic AI platform built on AWS Bedrock. Designed the tech stack, component architecture, and development standards from scratch. The platform enables organisations to configure custom AI agents, connect proprietary data sources, and apply brand theming for their specific use case. Primary application built on the platform: an internal tool connecting company handbook, learning tracks, and HR data to help managers generate personalised development paths for engineers and navigate company policy.",
+      },
+      {
+        title: "Working with:",
+        text: "React, Typescript, Next (App architecture), pnpm, Zustand, Vitest, Playwright, TanStack React Query & Form, Zod, clsx, ShadCN, TailWind, Mermaid, GitHub actions, Vercel.",
+      },
+      {
+        title: "Highlights:",
+        text: "Working with AI chatbots. Implementing Server Sent Events to stream AI conversation in real time. Exploring AI-driven solutions",
+      },
+    ],
+    additional: "January 2025 - May 2026",
+  },
+  {
     title: "Software Engineer II",
     subtitle: "Glovo - Madrid (remote)",
     highlights: [
